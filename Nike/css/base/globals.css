@@ -10,7 +10,7 @@
 .page__body {
 	background-color: var(--bg-color);
 	min-width: 375px;
-	
+
 }
 
 .page__body--no-scroll {
@@ -34,12 +34,14 @@
 .section-title {
 	color: var(--main-color);
 	font-family: var(--font-semBold);
-	/*мин 375px макс 1274px окно*/
+	/*мин 375px макс 1274px окно, от 60px до 32px*/
 	font-size: clamp(32px, calc(20.268156px + 3.128492vw), 60px);
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
 	text-transform: uppercase;
+	/* от 40 до 30px экран мин 375 и макс 1274 */
+	margin-bottom: clamp(30px, calc(25.828699px + 1.112347vw), 40px);
 }
 
 /*заголовок карточек в разных секций*/
@@ -53,8 +55,9 @@
 	text-transform: uppercase;
 }
 
-/*.header,
-.hero {
+.header,
+.hero,
+.air-mag {
 	display: none;
 
-}*/
+}

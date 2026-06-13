@@ -3,6 +3,10 @@
 	scroll-margin-top: 100px;
 }
 
+.air-mag__title{
+	margin-bottom: 0px;
+}
+
 .air-mag__sub-text {
 	max-width: 1140px;
 	margin-top: 10px;

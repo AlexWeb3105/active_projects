@@ -1,0 +1,42 @@
+.sizes__header {}
+
+.sizes__models-slider {}
+
+.sizes__header-title {
+	color: var(--main-color);
+	font-size: 32px;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.sizes__highlight {
+	color: var(--accent-color);
+}
+
+.sizes__header-subtext {
+	padding-block: 20px 40px;
+}
+
+.sizes__footer {}
+
+.sizes__price {
+	padding-bottom: 40px;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.sizes__selector {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.sizes__in-stock {}
+
+.sizes__buy {}
+
+.sizes__on-order {}
+
+.sizes__order {}
