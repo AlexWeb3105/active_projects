@@ -2,6 +2,24 @@
 
 .sizes__models-slider {}
 
+.sizes__swiper {
+	border-radius: 12px;
+	border: 2px solid var(--accent-color);
+	padding-block: 46px 57px;
+	margin-bottom: 60px;
+}
+
+.swiper-wrapper {
+	max-width: 357px;
+	height: 375px;
+	margin-inline: auto;
+}
+
+.swiper-slide__img {
+	object-fit: cover;
+
+}
+
 .sizes__header-title {
 	color: var(--main-color);
 	font-size: 32px;

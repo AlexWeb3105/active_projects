@@ -16,7 +16,6 @@
 .page__body--no-scroll {
 	/*убираем скролл если накидывается на этот класс при открытие бургера*/
 	overflow-y: hidden;
-
 }
 
 .container {
@@ -55,9 +54,9 @@
 	text-transform: uppercase;
 }
 
-.header,
+/*.header,
 .hero,
 .air-mag {
 	display: none;
 
-}
+}*/

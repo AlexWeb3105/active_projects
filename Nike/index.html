@@ -5,8 +5,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./icon/favicon-nike-icon.svg" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/index.css">
-		<script type="module" src="./js/index.js"></script>
+
 		<title>Nike Air mag</title>
 	</head>
 
@@ -131,14 +132,31 @@
 						Размеры
 					</h2>
 					<header class="sizes__header">
-						<div class="sizes__models-slider">
+						<div class="sizes__swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img class="swiper-slide__img" src="./images/sliders/sneakers_section_sizens.webp" width="357"
+										height="375">
+								</div>
+								<div class="swiper-slide">
+									<img class="swiper-slide__img" src="./images/sliders/sneakers_back.webp" width="408" height="375"
+										alt="">
+								</div>
+								<div class="swiper-slide">
+									<img class="swiper-slide__img" src="./images/sliders/sneakers_left.webp" width="442" height="375"
+										alt="">
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
 						</div>
 						<h3 class="sizes__header-title">
 							Кроссовки <span class="sizes__highlight">Nike Air Mag</span> Back To Future
 						</h3>
 						<p class="sizes__header-subtext">
 							Nike Air Mag — это кусочек киноистории и технологического прогресса. Если вы ищете уникальную пару
-							кроссовок, которая станет не только стильным аксессуаром, но и ценным дополнением вашей коллекции, Nike
+							кроссовок, которая станет не только стильным аксессуаром, но и ценным дополнением вашей коллекции,
+							Nike
 							Air Mag — идеальный выбор.
 						</p>
 					</header>
@@ -160,5 +178,8 @@
 			</section>
 		</main>
 	</body>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script src="./js/slider.js"></script>
+	<script type="module" src="./js/index.js"></script>
 
 </html>
