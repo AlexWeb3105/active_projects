@@ -27,7 +27,7 @@
 							<a href="#air-mag" class="menu__link" lang="en">Air Mag</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">Размеры</a>
+							<a href="#sizes" class="menu__link">Размеры</a>
 						</li>
 						<li class="menu__item">
 							<a href="#" class="menu__link">Характеристики</a>
@@ -126,7 +126,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="sizes">
+			<section class="sizes" id="sizes">
 				<div class="container">
 					<h2 class="sizes__title section-title ">
 						Размеры
@@ -161,14 +161,40 @@
 						</p>
 					</header>
 					<footer class="sizes__footer">
-						<div class="sizes__price">36 490 ₽</div>
+						<div class="sizes__price">
+							36 490₽
+						</div>
 						<div class="sizes__selector">
 							<div class="sizes__in-stock">
-								<p class="sizes-text"></p>
-								<button class="sizes__buy" aria-label="Кнопка для быстрой покупки" title="Купить в 1 клик">Купить в 1
-									клик</button>
+								<p class="sizes__label sizes__label--in-stock">Размеры в наличии</p>
+								<ul class="sizes__variants-list">
+									<li class="sizes__size-item sizes__size-item--available">38</li>
+									<li class="sizes__size-item sizes__size-item--available">40</li>
+									<li class="sizes__size-item sizes__size-item--available">41</li>
+									<li class="sizes__size-item sizes__size-item--available">42</li>
+									<li class="sizes__size-item sizes__size-item--available">44</li>
+									<li class="sizes__size-item sizes__size-item--available">45</li>
+								</ul>
+								<div class="sizes__buttons-group">
+									<button class="sizes__quick-buy" aria-label="Кнопка для быстрой покупки" title="Купить в 1 клик">
+										Купить в 1 клик
+									</button>
+									<button class="sizes__buy-search">
+										<svg class="sizes__icon-search" width="23" height="23">
+											<use class="icon-search" href="./icon/sprite.svg#shopping-cart" />
+										</svg>
+									</button>
+								</div>
 							</div>
 							<div class="sizes__on-order">
+								<p class="sizes__label sizes__label--on-order">Размеры под заказ</p>
+								<ul class="sizes__variants-list">
+									<li class="sizes__size-item sizes__size-item--on-order">38</li>
+									<li class="sizes__size-item sizes__size-item--on-order">40</li>
+									<li class="sizes__size-item sizes__size-item--on-order">41</li>
+									<li class="sizes__size-item sizes__size-item--on-order">42</li>
+									<li class="sizes__size-item sizes__size-item--on-order">44</li>
+								</ul>
 								<button class="sizes__order" aria-label="заказать доступный размер" title="Заказать размер">Заказать
 									размер</button>
 							</div>

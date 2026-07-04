@@ -10,13 +10,18 @@
 .page__body {
 	background-color: var(--bg-color);
 	min-width: 375px;
-
 }
 
 .page__body--no-scroll {
 	/*убираем скролл если накидывается на этот класс при открытие бургера*/
 	overflow-y: hidden;
 }
+
+section {
+	margin-bottom: 92px;
+	scroll-margin-top: 100px;
+}
+
 
 .container {
 	width: min(var(--cont-width), 100% - 15px * 2);
@@ -54,6 +59,37 @@
 	text-transform: uppercase;
 }
 
+/* блоки с размерами в секции размеры */
+.sizes__label {
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	color: var(--main-color);
+	padding-bottom: 20px;
+}
+
+.sizes__size-item {
+	width: 60px;
+	height: 60px;
+	border-radius: 12px;
+	border: solid 1px var(--main-color);
+
+	font-weight: 400;
+	line-height: 130%;
+	/* 20.8px */
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	color: var(--main-color);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 10px -5px, inset 0px 0px 10px -5px;
+
+}
+
+/*! убрать в конце */
 /*.header,
 .hero,
 .air-mag {
