@@ -1,6 +1,7 @@
 .sizes__header {
 	/*! убрать в конце */
 	/*display: none;*/
+	padding-inline: 16px;
 }
 
 .sizes__swiper {
@@ -19,8 +20,33 @@
 
 .swiper-slide__img {
 	object-fit: cover;
+}
+
+.swiper__btn-prev,
+.swiper__btn-next {
+	color: var(--main-color);
+	transition: var(--anima) linear;
+	top: 210px;
+	position: absolute;
 
 }
+
+.swiper__btn-prev {
+	left: 20px;
+}
+
+.swiper__btn-next {
+	right: 20px;
+	z-index: 2;
+}
+
+
+.swiper__btn-prev:hover,
+.swiper__btn-next:hover {
+	color: var(--accent-color);
+}
+
+
 
 .sizes__header-title {
 	color: var(--main-color);
