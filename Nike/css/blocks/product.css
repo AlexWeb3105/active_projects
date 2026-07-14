@@ -93,7 +93,6 @@
 .product__size-item--active {
 	color: var(--accent-color);
 	border: 1px solid var(--accent-color);
-
 }
 
 .product__size-item--available:hover {
@@ -133,13 +132,14 @@
 .product__buy-search:hover {
 	box-shadow: 0 0 15px -3px var(--accent-color);
 	transition: var(--anima) linear;
-
 }
 
 .product__label--on-order {
 	color: var(--secondary-color);
 }
 
+
+/* оформление выключеной кнопки размеров */
 .product__size-item--on-order {
 	color: var(--disable-color);
 	border: 1px solid var(--disable-color);
