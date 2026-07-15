@@ -1,4 +1,3 @@
-
 {
 	"workbench.startupEditor": "newUntitledFile",
 	"explorer.confirmDelete": false,
@@ -126,5 +125,7 @@
 	"svg.completion.emmet": true,
 	"emmet.triggerExpansionOnTab": true,
 	"emmet.showExpandedAbbreviation": "always",
-	"html.format.wrapAttributes": "force-aligned"
+	"html.format.wrapAttributes": "force-aligned",
+	"indentRainbow.tabmixColor": "gba(128,32,96,0.6)",
+	"indentRainbow.errorColor": "gba(128,32,96,0.6)"
 }
