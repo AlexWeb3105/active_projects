@@ -19,7 +19,7 @@
 
 /* ! внимание */
 section {
-	
+
 	scroll-margin-top: 100px;
 }
 
@@ -90,7 +90,8 @@ section {
 }
 
 /*! убрать в конце */
-/*.hero,
-.air-mag {
+.hero,
+.air-mag,
+.header {
 	display: none;
-}*/
+}
