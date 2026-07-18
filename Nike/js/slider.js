@@ -1,7 +1,9 @@
-const swiper = new Swiper('.swiper', {
+export const swiper = new Swiper('.swiper', {
   // Optional parameters
   //direction: 'vertical',
   loop: true,
+	centeredSlides: true,
+	slidesPerView: "auto",
 
   // If we need pagination
   //pagination: {

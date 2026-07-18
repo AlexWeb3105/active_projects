@@ -1,6 +1,7 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
-
+import { swiper } from "./slider.js";
+import { sizes } from "./sizes.js";
 
 try {
   const headerFixed = new HeaderFixed({
@@ -22,10 +23,12 @@ try {
       PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
       MENU_LINK: "menu__link",
       BREAKPOINT: 820,
-			MAIN: "main",
+      MAIN: "main",
     },
     headerFixed,
   );
+  new Swiper();
+  sizes();
 } catch (error) {
   console.error(error);
 }

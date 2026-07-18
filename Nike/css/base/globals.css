@@ -65,7 +65,7 @@ section {
 	padding-bottom: 20px;
 }
 
-.product__size-item {
+.product__size-button {
 	width: 60px;
 	height: 60px;
 	border-radius: 12px;
@@ -90,8 +90,8 @@ section {
 }
 
 /*! убрать в конце */
-.hero,
+/*.hero,
 .air-mag,
 .header {
 	display: none;
-}
+}*/
