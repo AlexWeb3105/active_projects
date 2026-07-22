@@ -17,9 +17,7 @@
 	overflow-y: hidden;
 }
 
-/* ! внимание */
 section {
-
 	scroll-margin-top: 100px;
 }
 
@@ -65,7 +63,7 @@ section {
 	padding-bottom: 20px;
 }
 
-.product__size-item {
+.product__size-button {
 	width: 60px;
 	height: 60px;
 	border-radius: 12px;
@@ -85,13 +83,30 @@ section {
 
 }
 
-.section--margin-bottom {
+.section--mb-s {
 	margin-bottom: 92px;
 }
 
+.section--mb-m {
+	margin-bottom: 140px;
+}
+
+:focus-visible {
+	outline: 2px solid var(--accent-color);
+	outline-offset: 3px;
+	/* Фокус при нажатии Tab */
+}
+
+button:active {
+	background: #1eff004e;
+	transform: translateY(2px);
+	/* эффект «вдавливания» */
+}
+
+
 /*! убрать в конце */
-.hero,
-.air-mag,
+/*.hero,
+.air-mag, .sizes
 .header {
 	display: none;
-}
+}*/
