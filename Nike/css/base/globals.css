@@ -17,9 +17,7 @@
 	overflow-y: hidden;
 }
 
-/* ! внимание */
 section {
-
 	scroll-margin-top: 100px;
 }
 
@@ -85,13 +83,18 @@ section {
 
 }
 
-.section--margin-bottom {
+.section--mb-s {
 	margin-bottom: 92px;
+}
+
+.section--mb-m {
+	margin-bottom: 140px;
 }
 
 :focus-visible {
 	outline: 2px solid var(--accent-color);
 	outline-offset: 3px;
+	/* Фокус при нажатии Tab */
 }
 
 button:active {
@@ -103,7 +106,7 @@ button:active {
 
 /*! убрать в конце */
 /*.hero,
-.air-mag,
+.air-mag, .sizes
 .header {
 	display: none;
 }*/
