@@ -105,8 +105,13 @@ button:active {
 
 
 /*! убрать в конце */
-.hero,
-.air-mag,.sizes,
+/*.hero,
+.air-mag,
+.sizes,
 .header {
 	display: none;
+}*/
+
+svg {
+	display: block;
 }

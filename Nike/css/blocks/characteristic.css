@@ -1,0 +1,22 @@
+.characteristic {
+}
+.characteristic__title {
+}
+.section-title {
+}
+.characteristic__media {
+}
+.characteristic__img {
+}
+.characteristic__inner {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.characteristic__item {
+}
+.characteristic__item-icon {
+}
+.characteristic__item-title {
+}
+.characteristic__item-value {
+}
