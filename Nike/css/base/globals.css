@@ -97,12 +97,19 @@ section {
 	/* Фокус при нажатии Tab */
 }
 
-button:active {
-	background: #1eff004e;
+.btn-active:active {
 	transform: translateY(2px);
 	/* эффект «вдавливания» */
 }
 
+svg {
+	display: block;
+}
+
+picture {
+	display: block;
+	line-height: 0.1;
+}
 
 /*! убрать в конце */
 /*.hero,
@@ -111,7 +118,3 @@ button:active {
 .header {
 	display: none;
 }*/
-
-svg {
-	display: block;
-}

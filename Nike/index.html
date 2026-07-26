@@ -37,21 +37,29 @@
 					<ul class="menu__list">
 						<li class="menu__item">
 							<a href="#air-mag"
+								 aria-label="Статья о кроссовках"
 								 class="menu__link"
+								 title="Air Mag"
 								 lang="en">Air Mag</a>
 						</li>
 						<li class="menu__item">
 							<a href="#sizes"
+								 aria-label="Заказ размер кроссовок"
+								 title="Размеры"
 								 class="menu__link">Размеры</a>
 						</li>
 						<li class="menu__item">
-							<a href="#"
+							<a href="#characteristic"
+								 aria-label="Характеристики кроссовок"
+								 title="Характеристики"
 								 class="menu__link"
 								 aria-label="Характеристики">Характеристики</a>
 						</li>
 						<li class="menu__item">
 							<a href="#"
-								 class="menu__link">Другие ТОП модели</a>
+								 aria-label="Топ-Модели"
+								 class="menu__link"
+								 title="ТОП Модели">Другие ТОП модели</a>
 						</li>
 					</ul>
 				</nav>
@@ -63,7 +71,7 @@
 						Сделать заказ
 					</a>
 					<div class="header__actions">
-						<button class="header__actions-button"
+						<button class="header__actions-button btn-active"
 										aria-label="Поиск"
 										title="Поиск">
 							<svg class="action__icon-search"
@@ -73,8 +81,9 @@
 										 href="./icon/sprite.svg#search-header" />
 							</svg>
 						</button>
-						<button class="header__actions-button"
-										aria-label="Корзина"
+						<button class="header__actions-button btn-active
+										aria-label="
+										Корзина"
 										title="Корзина">
 							<svg class="action__icon-shop"
 									 width="24"
@@ -199,7 +208,7 @@
 														 src="./images/sliders/1.png"
 														 width="357"
 														 height="375"
-														 alt="" />
+														 alt="Вид сбоку кроссовок" />
 											</picture>
 										</div>
 									</div>
@@ -212,7 +221,7 @@
 														 src="./images/sliders/2.png"
 														 width="408"
 														 height="375"
-														 alt="" />
+														 alt="Вид сзади кроссовок" />
 											</picture>
 										</div>
 									</div>
@@ -225,7 +234,7 @@
 														 src="./images/sliders/3.png"
 														 width="442"
 														 height="375"
-														 alt="" />
+														 alt="Вид с другой стороны кроссовок" />
 											</picture>
 										</div>
 									</div>
@@ -271,7 +280,7 @@
 									<ul class="product__variants-list"
 											data-sizes="list">
 										<li>
-											<button class="product__size-button product__size-button--available"
+											<button class="product__size-button product__size-button--available btn--active btn-active"
 															aria-label="Заказать размер 38"
 															title="38"
 															data-sizes="button">
@@ -279,7 +288,7 @@
 											</button>
 										</li>
 										<li>
-											<button class="product__size-button product__size-button--available"
+											<button class="product__size-button product__size-button--available btn--active btn-active"
 															aria-label="Заказать размер 40"
 															title="40"
 															data-sizes="button">
@@ -287,7 +296,7 @@
 											</button>
 										</li>
 										<li>
-											<button class="product__size-button product__size-button--available"
+											<button class="product__size-button product__size-button--available btn--active btn-active"
 															aria-label="Заказать размер 41"
 															title="41"
 															data-sizes="button">
@@ -295,7 +304,7 @@
 											</button>
 										</li>
 										<li>
-											<button class="product__size-button product__size-button--available"
+											<button class="product__size-button product__size-button--available btn--active btn-active"
 															aria-label="Заказать размер 42"
 															title="42"
 															data-sizes="button">
@@ -303,7 +312,7 @@
 											</button>
 										</li>
 										<li>
-											<button class="product__size-button product__size-button--available"
+											<button class="product__size-button product__size-button--available btn--active btn-active"
 															aria-label="Заказать размер 44"
 															title="44"
 															data-sizes="button">
@@ -311,7 +320,7 @@
 											</button>
 										</li>
 										<li>
-											<button class="product__size-button product__size-button--available"
+											<button class="product__size-button product__size-button--available btn--active btn-active"
 															aria-label="Заказать размер 45"
 															title="45"
 															data-sizes="button">
@@ -320,12 +329,12 @@
 										</li>
 									</ul>
 									<div class="product__buttons-group">
-										<button class="product__quick-buy"
+										<button class="product__quick-buy btn-active"
 														aria-label="Кнопка для быстрой покупки"
 														title="Купить в 1 клик">
 											Купить в 1 клик
 										</button>
-										<button class="product__buy-search"
+										<button class="product__buy-search btn-active "
 														title="Корзина">
 											<svg class="product__icon-search"
 													 width="23"
@@ -383,7 +392,8 @@
 					</section>
 				</div>
 			</section>
-			<section class="characteristic">
+			<section class="characteristic section--mb-m"
+							 id="characteristic">
 				<div class="container">
 					<h2 class="characteristic__title section-title">Характеристики</h2>
 					<div class="characteristic__media">
@@ -394,14 +404,22 @@
 									 src="./images/sneakers_sections-media.jpg"
 									 alt="Видео с презентацией кроссовок"
 									 width="1240"
-									 height="600">
+									 height="600"
+									 title="Кроссовки на коробке">
 						</picture>
-
+						<button class="characteristic__media-button"
+										aria-label="Воспроизвести видео"
+										title="Воспроизвести видео">
+							<svg class="characteristic__media-icon">
+								<use href="./icon/sprite.svg#play" />
+							</svg>
+						</button>
 					</div>
 					<div class="characteristic__inner">
 						<div class="characteristic__item">
 							<div class="characteristic__item-icon">
-								<svg width="40"
+								<svg class="characteristic__item-svg"
+										 width="40"
 										 height="40">
 									<use href="./icon/sprite.svg#planet" />
 								</svg>
@@ -409,7 +427,7 @@
 							<h3 class="characteristic__item-title">
 								Футуристический дизайн
 							</h3>
-							<span class="characteristic__item-value">Nike Air Mag выделяются своим уникальным и оригинальным дизайном,
+							<p class="characteristic__item-value">Nike Air Mag выделяются своим уникальным и оригинальным дизайном,
 								который сразу же привлекает внимание. Эта модель создана для тех, кто ценит стиль, вдохновленный наукой
 								и фантастикой</span>
 						</div>
@@ -423,11 +441,11 @@
 							<h3 class="characteristic__item-title">
 								Автоматическая шнуровка
 							</h3>
-							<span class="characteristic__item-value">
+							<p class="characteristic__item-value">
 								Инновационная система автоматической шнуровки обеспечивает
 								идеальную фиксацию обуви на ноге без необходимости вручную завязывать шнурки, что значительно повышает
 								комфорт
-							</span>
+								</span>
 						</div>
 						<div class="characteristic__item">
 							<div class="characteristic__item-icon">
@@ -439,10 +457,10 @@
 							<h3 class="characteristic__item-title">
 								Ограниченный выпуск
 							</h3>
-							<span class="characteristic__item-value">
+							<p class="characteristic__item-value">
 								Nike Air Mag были выпущены в ограниченном количестве, что делает
 								каждую пару желанным объектом для коллекционеров и любителей уникальных кроссовок
-							</span>
+								</span>
 						</div>
 						<div class="characteristic__item">
 							<div class="characteristic__item-icon">
@@ -454,10 +472,10 @@
 							<h3 class="characteristic__item-title">
 								Встроенная подсветка
 							</h3>
-							<span class="characteristic__item-value">
+							<p class="characteristic__item-value">
 								Благодаря светодиодной подсветке, кроссовки выглядят эффектно в
 								темное время суток. Это придает им еще больше оригинальности и уникальности
-							</span>
+								</span>
 						</div>
 						<div class="characteristic__item">
 							<div class="characteristic__item-icon">
@@ -469,10 +487,10 @@
 							<h3 class="characteristic__item-title">
 								Комфорт и поддержка
 							</h3>
-							<span class="characteristic__item-value">
+							<p class="characteristic__item-value">
 								Модель предлагает высокий уровень комфорта благодаря качественной
 								амортизации и поддержке стопы, что делает их идеальными для длительного ношения
-							</span>
+								</span>
 						</div>
 						<div class="characteristic__item">
 							<div class="characteristic__item-icon">
@@ -484,10 +502,10 @@
 							<h3 class="characteristic__item-title">
 								Современные материалы
 							</h3>
-							<span class="characteristic__item-value">
+							<p class="characteristic__item-value">
 								Nike Air Mag изготовлены из высококачественных синтетических
 								материалов, которые обеспечивают долговечность, устойчивость к износу и легкость в уходе
-							</span>
+								</span>
 						</div>
 						<div class="characteristic__item">
 							<div class="characteristic__item-icon">
@@ -499,10 +517,10 @@
 							<h3 class="characteristic__item-title">
 								Хорошая сцепляемость
 							</h3>
-							<span class="characteristic__item-value">
+							<p class="characteristic__item-value">
 								Подошва кроссовок обладает отличным сцеплением с различными
 								поверхностями, что обеспечивает надежность при ходьбе и беге
-							</span>
+								</span>
 						</div>
 						<div class="characteristic__item">
 							<div class="characteristic__item-icon">
@@ -514,10 +532,10 @@
 							<h3 class="characteristic__item-title">
 								Культовый статус
 							</h3>
-							<span class="characteristic__item-value">
+							<p class="characteristic__item-value">
 								Nike Air Mag стали культовыми благодаря своему появлению в кино
 								"Назад в будущее 2", что подчеркивает их историческую и культурную значимость
-							</span>
+								</span>
 						</div>
 						<div class="characteristic__item">
 							<div class="characteristic__item-icon">
@@ -529,20 +547,15 @@
 							<h3 class="characteristic__item-title">
 								Яркое дополнение к любому образу
 							</h3>
-							<span class="characteristic__item-value">
+							<p class="characteristic__item-value">
 								Кроссовки легко вписываются в различные стили одежды, позволяя
 								создавать уникальные образы. Они могут дополнить как спортивный, так и повседневный стиль
-							</span>
+								</span>
 						</div>
 					</div>
-
 				</div>
 			</section>
 		</main>
-
-
-
-
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 	<script type="module"
