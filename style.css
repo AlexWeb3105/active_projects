@@ -1,0 +1,63 @@
+body {
+	background: #664751;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.active-projects {
+	text-align: center;
+}
+
+.active-projects__title {
+	text-transform: uppercase;
+	font-family: "Abril Fatface", serif;
+	font-weight: 700;
+	font-style: italic;
+	border-bottom: #2b036b solid 2px;
+}
+
+.container {
+	width: 1200px;
+	height: 600px;
+	background: #9766a7;
+	border-radius: 12px;
+	border: 1px solid #2b036b;
+}
+
+.active-project__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 20px;
+}
+
+.active-project__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 150px;
+	border: 2px solid #5ba5b9;
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 15px -3px #2b036b;
+	transition: background-color, 0.4s;
+	text-transform: uppercase;
+	font-family: "Orbitron", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.active-project__btn:hover {
+	background-color: #593c63;
+	transform: translateY(1px);
+	box-shadow: inset 0px 0px 15px -3px #ffffff;
+}
