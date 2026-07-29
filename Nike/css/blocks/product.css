@@ -115,8 +115,6 @@
 
 }
 
-.product__in-stock {}
-
 .product__variants-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -136,7 +134,6 @@
 }
 
 @media (any-hover: hover) {
-
 	.product__size-button--available:hover {
 		border: 1px solid var(--accent-color);
 		box-shadow:

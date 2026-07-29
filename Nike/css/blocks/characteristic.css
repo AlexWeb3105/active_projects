@@ -14,6 +14,20 @@
 	transform: translate(-50%, -50%);
 }
 
+.characteristic__media-button>svg {
+	color: var(--main-color);
+	transition: color 0.2s;
+}
+
+@media (any-hover: hover) {
+	.characteristic__media-button>svg:hover {
+		color: var(--accent-color);
+		transition: color 0.2s;
+	}
+
+}
+
+
 .characteristic__media-icon {
 	/* 64px, viewport: 375px -> 96px, viewport: 1200px */
 	width: clamp(64px, 49.45px + 3.88vw, 96px);
