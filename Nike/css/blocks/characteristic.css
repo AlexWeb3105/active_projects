@@ -17,7 +17,7 @@
 .characteristic__media-button>svg {
 	color: var(--main-color);
 	transition: color 0.2s;
-	}
+}
 
 @media (any-hover: hover) {
 	.characteristic__media-button>svg:hover {
@@ -43,23 +43,25 @@
 
 .characteristic__inner {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 20px;
-	row-gap: 40px;
+	grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+	/*column-gap: 20px;
+	row-gap: 40px;*/
+
+	gap: 40px 20px;
 }
 
-@media (width<=1070px) {
+/*@media (width<=1070px) {
 	.characteristic__inner {
 		grid-template-columns: repeat(2, 1fr);
 	}
-}
+}*/
 
 .characteristic__item {}
 
 @media (width<=700px) {
 	.characteristic__item-icon>svg {
-		width: 32px;
-		height: 32px;
+		width: 47px;
+		height: 47px;
 	}
 
 	.characteristic__inner {
