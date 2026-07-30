@@ -17,7 +17,7 @@
 .characteristic__media-button>svg {
 	color: var(--main-color);
 	transition: color 0.2s;
-}
+	}
 
 @media (any-hover: hover) {
 	.characteristic__media-button>svg:hover {
