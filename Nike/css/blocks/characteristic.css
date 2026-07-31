@@ -58,6 +58,10 @@
 
 .characteristic__item {}
 
+.characteristic__item-icon>svg {
+	transform: translateX(-9px);
+}
+
 @media (width<=700px) {
 	.characteristic__item-icon>svg {
 		width: 47px;

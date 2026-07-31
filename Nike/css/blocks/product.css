@@ -82,9 +82,6 @@
 	text-transform: uppercase;
 }
 
-.product__highlight {
-	color: var(--accent-color);
-}
 
 .product__header-subtext {
 	padding-block: 20px 40px;

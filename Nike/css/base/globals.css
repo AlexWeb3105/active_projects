@@ -111,10 +111,16 @@ picture {
 	line-height: 0.1;
 }
 
+.product__title-highlight,
+.top-models__title-highlight {
+	color: var(--accent-color);
+}
+
 /*! убрать в конце */
 /*.hero,
 .air-mag,
 .sizes,
-.header {
+.header,
+.characteristic {
 	display: none;
 }*/
