@@ -75,10 +75,7 @@
 
 .characteristic__item-title {
 	padding-block: 20px;
-	font-family: var(--font-semBold);
-	font-weight: 600;
-	line-height: normal;
-	text-transform: uppercase;
+	
 }
 
 .characteristic__item-value {

@@ -43,7 +43,7 @@ section {
 }
 
 /*заголовок карточек в разных секций*/
-.card-title {
+.article-title  {
 	color: var(--main-color);
 	font-family: var(--font-semBold);
 	font-size: 18px;
@@ -117,10 +117,10 @@ picture {
 }
 
 /*! убрать в конце */
-/*.hero,
+.hero,
 .air-mag,
 .sizes,
 .header,
 .characteristic {
 	display: none;
-}*/
+}
