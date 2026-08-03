@@ -56,3 +56,8 @@
 	bottom: clamp(20px, -147.14px + 14.29vw, 30px);
 	left: clamp(20px, -147.14px + 14.29vw, 30px);
 }
+
+.top-models__card-link:active .top-models__card-title,
+	.top-models__card-link:active .top-models__card-icon  {
+	color: var(--accent-color);
+}
