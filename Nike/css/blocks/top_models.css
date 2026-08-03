@@ -1,6 +1,7 @@
 .top-models__wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+	
 }
 
 .top-models__card {
