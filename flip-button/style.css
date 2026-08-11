@@ -1,0 +1,204 @@
+/* ================================================================
+   КНОПКА-ПЕРЕВЁРТЫШ — ПОШАГОВОЕ СОЗДАНИЕ
+   ================================================================ */
+
+/* ──────────────────────────────────────────
+   ШАГ 0: Сброс стилей + общий фон страницы
+   ────────────────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+/* ══════════════════════════════════════════
+   ШАГ 1: flip-card — «рамка» сцены
+   ══════════════════════════════════════════
+   
+   Это невидимая рамка, которая задаёт размер
+   карточки (300×200 пикселей).
+   
+   perspective: 1000px  ←  ГЛАВНЫЙ СЕКРЕТ!
+   Это свойство создаёт 3D-глубину. Чем меньше
+   число — тем сильнее эффект «близи».
+   ─────────────────────────────────────────── */
+
+.flip-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;       /* ← 3D-глубина сцены */
+    cursor: pointer;
+}
+
+/* ══════════════════════════════════════════
+   ШАГ 2: flip-card-inner — вращающийся куб
+   ══════════════════════════════════════════
+   
+   Это РЕАЛЬНЫЙ объект, который мы вращаем.
+   
+   width/height    — тоже 300×200 (как у родителя)
+   position: relative — чтобы стороны позиционировались
+                        относительно него
+   transition      — плавность анимации (0.6 сек)
+   transform-style — "preserve-3d" говорит браузеру:
+                        «сохраняй 3D для дочерних элементов»
+   ─────────────────────────────────────────── */
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;                        /* ← плавность */
+    transform-style: preserve-3d;                      /* ← 3D для детей */
+}
+
+/* ══════════════════════════════════════════
+   ШАГ 3: ПЕРЕВОРОТ при наведении!
+   ══════════════════════════════════════════
+   
+   Когда мы наводим курсор на .flip-card,
+   находим .flip-card-inner внутри него
+   и ВРАЩАЕМ его на 180 градусов вокруг оси Y.
+   
+   rotateY(180deg) — вращение по горизонтали
+   (как если бы переворачивали книгу)
+   ─────────────────────────────────────────── */
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* ══════════════════════════════════════════
+   ШАГ 4: Лицевая и обратная стороны
+   ══════════════════════════════════════════
+   
+   Общие стили для обеих сторон:
+   - position: absolute — накладываем их друг на друга
+   - width/height: 100% — размер как у контейнера
+   - backface-visibility: hidden — СКРЫВАЕМ «спину» элемента,
+                                    чтобы не было видно
+                                    обратной стороны сквозь лицевую
+   ─────────────────────────────────────────── */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;          /* ← скрываем «спину» */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Лицевая сторона ── */
+
+.flip-card-front {
+    background: linear-gradient(135deg, #e94560, #c23152);
+    color: white;
+}
+
+/* ── Обратная сторона ── */
+
+.flip-card-back {
+    background: linear-gradient(135deg, #0f3460, #533483);
+    color: white;
+    
+    /* ГЛАВНЫЙ СЕКРЕТ №2:
+       Поворачиваем обратную сторону НА 180deg
+       изначально, чтобы при перевороте карточки
+       она оказалась «лицом» к зрителю.
+       
+       Без этого при повороте карточки обратная
+       сторона окажется вверх ногами! */
+    transform: rotateY(180deg);
+}
+
+/* ══════════════════════════════════════════
+   ШАГ 5: Декоративное оформление контента
+   ══════════════════════════════════════════ */
+
+.face-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.face-content .icon {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.face-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.face-content p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-bottom: 15px;
+}
+
+/* Кнопка на обратной стороне */
+
+.action-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #fff;
+    color: #e94560;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ══════════════════════════════════════════
+   ШАГ 6: Адаптивность для мобильных
+   ══════════════════════════════════════════ */
+
+@media (max-width: 480px) {
+    .flip-card {
+        width: 260px;
+        height: 180px;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+}
