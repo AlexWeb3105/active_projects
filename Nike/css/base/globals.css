@@ -118,10 +118,10 @@ picture {
 }
 
 /*! убрать в конце */
-.hero,
+/*.hero,
 .air-mag,
 .sizes,
 .header,
 .characteristic {
 	display: none;
-}
+}*/

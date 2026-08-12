@@ -58,6 +58,6 @@
 }
 
 .top-models__card-link:active .top-models__card-title,
-	.top-models__card-link:active .top-models__card-icon  {
+.top-models__card-link:active .top-models__card-icon {
 	color: var(--accent-color);
 }
