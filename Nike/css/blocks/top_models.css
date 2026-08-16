@@ -11,8 +11,8 @@
 		0px 0px 30px 2px var(--accent-color-opc),
 		inset 0px 0px 30px 2px var(--accent-color-opc);
 		padding: 30px;
-		display: flex;
-
+		display: grid;
+		
 }
 
 .top-models__card-title {
@@ -21,7 +21,12 @@
 .article-title {}
 
 .top-models__card-img {
+	width: 192px;
+
 	
 }
 
-.top-models__card-icon {}
+.top-models__card-icon {
+	
+
+}
