@@ -22,12 +22,17 @@
 
 @media (any-hover: hover) {
 
-	.top-models__card-link:hover .top-models__card-title,
-	.top-models__card-link:hover .top-models__card-icon {
-		color: var(--accent-color);
-		transition: var(--anima);
-	}
+		.top-models__card-link:hover .top-models__card-title,
+		.top-models__card-link:hover .top-models__card-icon {
+			color: var(--accent-color);
+			transition: var(--anima);
+		}
+		/*! СКРЫТЬ НА ВРЕМЯ */
 }
+
+
+
+
 
 .top-models__card-title {
 	width: min(100%, 139px);
