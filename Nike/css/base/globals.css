@@ -120,8 +120,9 @@ picture {
 /*! убрать в конце */
 /*.hero,
 .air-mag,
-.sizes,
 .header,
-.characteristic {
+.sizes,
+.characteristic,
+.top-models {
 	display: none;
 }*/
