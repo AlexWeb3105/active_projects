@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка-перевёртыш</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎴 Flip Button</h1>
+        <p>Наведи курсор на карточку — она перевернётся!</p>
+
+        <!-- 
+            ╔══════════════════════════════════════════╗
+            ║  ШАГ 1: HTML-СТРУКТУРА                   ║
+            ║                                          ║
+            ║  flip-card      — рамка (контейнер)      ║
+            ║  flip-card-inner — сам объект, который   ║
+            ║                   будет вращаться        ║
+            ║  front / back   — две стороны куба       ║
+            ╚══════════════════════════════════════════╝
+        -->
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+
+                <!-- ★ Лицевая сторона ★ -->
+                <div class="flip-card-front">
+                    <div class="face-content">
+                        <span class="icon">?</span>
+                        <h2>Наведи на меня</h2>
+                        <p>Я перевернусь!</p>
+                    </div>
+                </div>
+
+                <!-- ★ Обратная сторона ★ -->
+                <div class="flip-card-back">
+                    <div class="face-content">
+                        <span class="icon">✓</span>
+                        <h2>Ура!</h2>
+                        <p>Ты перевернул карточку</p>
+                        <a href="#" class="action-btn">Подробнее →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 
+            ╔══════════════════════════════════════════╗
+            ║  ИТОГО: 4 уровня вложенности             ║
+            ║                                          ║
+            ║  .flip-card           (рамка 300x200)    ║
+            ║    └ .flip-card-inner (вращающийся куб)  ║
+            ║         ├ .flip-card-front   (лицо)      ║
+            ║         └ .flip-card-back    (спина)     ║
+            ╚══════════════════════════════════════════╝
+        -->
+
+    </div>
+
+</body>
+</html>
+

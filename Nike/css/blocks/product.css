@@ -131,94 +131,94 @@
 }
 
 @media (any-hover: hover) {
-	.product__size-button--available:hover {
+	/*.product__size-button--available:hover {
 		border: 1px solid var(--accent-color);
 		box-shadow:
 			0px 0px 10px -5px var(--accent-color),
 			inset 0px 0px 10px -5px var(--accent-color);
 	}
-}
+}*/
 
-.product__buttons-group {
-	display: flex;
-	gap: 10px;
-}
+	.product__buttons-group {
+		display: flex;
+		gap: 10px;
+	}
 
-.product__quick-buy {
-	font-family: var(--font-semBold);
-	line-height: 130%;
-	letter-spacing: 1.6px;
-	text-transform: uppercase;
-	padding: 19px 38px;
-	background-color: var(--accent-color);
-	border-radius: 4px;
-}
-
-@media (width<=420px) {
 	.product__quick-buy {
-		width: 100%;
+		font-family: var(--font-semBold);
+		line-height: 130%;
+		letter-spacing: 1.6px;
+		text-transform: uppercase;
+		padding: 19px 38px;
+		background-color: var(--accent-color);
+		border-radius: 4px;
 	}
-}
 
-.product__buy-search {
-	width: 59px;
-	height: 59px;
-	border: 1px solid var(--accent-color);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: var(--accent-color);
-	border-radius: 4px;
-}
+	@media (width<=420px) {
+		.product__quick-buy {
+			width: 100%;
+		}
+	}
 
-@media (width<=420px) {
 	.product__buy-search {
-		flex-shrink: 0;
+		width: 59px;
+		height: 59px;
+		border: 1px solid var(--accent-color);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: var(--accent-color);
+		border-radius: 4px;
 	}
-}
 
-@media (any-hover: hover) {
-
-	.product__quick-buy:hover,
-	.product__buy-search:hover {
-		box-shadow: 0 0 15px -3px var(--accent-color);
-		transition: var(--anima) linear;
+	@media (width<=420px) {
+		.product__buy-search {
+			flex-shrink: 0;
+		}
 	}
-}
 
-.product__label--on-order {
-	color: var(--secondary-color);
-}
+	@media (any-hover: hover) {
 
-/*! ВНИМАНИЕ оформление выключеной кнопки размеров. Изначально делал через доп класс, но препадаватель показал атрибут на кнопке "выключить" (disabled) и потом уже навешать стили на выключени */
-/* .product__size-button--on-order {
+		.product__quick-buy:hover,
+		.product__buy-search:hover {
+			box-shadow: 0 0 15px -3px var(--accent-color);
+			transition: var(--anima) linear;
+		}
+	}
+
+	.product__label--on-order {
+		color: var(--secondary-color);
+	}
+
+	/*! ВНИМАНИЕ оформление выключеной кнопки размеров. Изначально делал через доп класс, но препадаватель показал атрибут на кнопке "выключить" (disabled) и потом уже навешать стили на выключени */
+	/* .product__size-button--on-order {
 	color: var(--disable-color);
 	border: 1px solid var(--disable-color);
 } */
 
-:disabled {
-	color: var(--disable-color);
-	border: 1px solid var(--disable-color);
-	cursor: not-allowed;
-}
-
-.product__order {
-	font-family: var(--fon-reg);
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 130%;
-	color: var(--main-color);
-	border-bottom: 1px solid var(--main-color);
-	padding-bottom: 5px;
-	transition: var(--anima) linear;
-}
-
-@media (any-hover: hover) {
-
-	.product__order:hover {
-		color: var(--accent-color);
-		border-bottom: 1px solid var(--accent-color);
+	:disabled {
+		color: var(--disable-color);
+		border: 1px solid var(--disable-color);
+		cursor: not-allowed;
 	}
-}
+
+	.product__order {
+		font-family: var(--fon-reg);
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 130%;
+		color: var(--main-color);
+		border-bottom: 1px solid var(--main-color);
+		padding-bottom: 5px;
+		transition: var(--anima) linear;
+	}
+
+	@media (any-hover: hover) {
+
+		.product__order:hover {
+			color: var(--accent-color);
+			border-bottom: 1px solid var(--accent-color);
+		}
+	}

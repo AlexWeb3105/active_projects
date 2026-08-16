@@ -1,0 +1,177 @@
+// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+// Placeholders with the same ids are connected.
+// Пример:
+// "Print to console": {
+// 	"scope": "javascript,typescript",
+// 	"prefix": "log",
+// 	"body": [
+// 		"console.log('$1');",
+// 		"$2"
+// 	],
+// 	"description": "Log output to console"}
+// 
+{
+	//!Подключение к спрайту//
+	"Спрайт-svg": {
+		"scope": "html",
+		"prefix": "spr",
+		"body": [
+			"<svg width=\"$1\" height=\"$2\" >",
+			"<use href=\"$3путь./..../sprite.svg#$4ID-иконки\"/>",
+			"</svg>",
+		],
+		"description": "подключение к спрайту с иконками"
+	},
+	//! Центрируем контейнер с тегом//
+	"Контейнер по центру": {
+		"scope": "css",
+		"prefix": "contain",
+		"body": [
+			".container {""width: min($1РАЗМЕР, 100% - $2ПАДДИНГ * 2);",
+			"margin-inline: auto;",
+			"}"
+		],
+		"description": "Центрируем контейнер"
+	},
+	//! Центрируем контейнер//
+	"Свойства контейнера": {
+		"scope": "css",
+		"prefix": "cc",
+		"body": [
+			"width: min($1РАЗМЕР, 100% - $2ПАДДИНГ * 2);",
+			"margin-inline: auto;"
+		],
+		"description": "По центру"
+	},
+	//! Оболочка svg //
+	"Развертка SVG ": {
+		"scope": "svg",
+		"prefix": "svg",
+		"body": [
+			"<!--Что бы настроить цвет через CSS, когда иконки в Спрайте.",
+			"",
+			"Использовать \"currentColor\"",
+			"",
+			"Шаг 1. В спрайте укажите stroke=\"currentColor ",
+			"- это даст управление цветом через CSS и свойство color:\"\" -->",
+			"",
+			"<svg xmlns=\"http://www.w3.org/2000/svg\">",
+			$1,
+			"</svg>"
+		],
+		"description": "Развертка SVG"
+	},
+	//!Центр по флексу //
+	"Центрирование Флекса": {
+		"scope": "css",
+		"prefix": "aj",
+		"body": [
+			"justify-content: center;",
+			"align-items: center;"
+		],
+		"description": "Центрирование Флекса"
+	},
+	//! медиа запрос для установки ховера для сенсорных гаджетов//
+	"hover для сенсорных устройств": {
+		"scope": "css",
+		"prefix": "any-h",
+		"body": [
+			"@media (any-hover: hover) {",
+    "$1\"сюда ховер вставляем\"",
+			"}"
+		],
+		"description": "hover для сенсорных-гаджетов"
+	}
+
+	//! фокусировка на сайте//
+	"Фокусировка на сайте": {
+		"scope": "css",
+  "prefix": "foc-vis",
+  "body": [
+    ":focus-visible{",
+    "	outline: 1px solid red;",
+    "	outline-offset: 2px;",
+    "}",
+    ""
+  ],
+  "description": "Фокус"
+},
+//кнопка перевертышь//
+"Кнопка перевертышь": {
+"prefix": "flip",
+"scope": "html",
+"body": [
+	"<div class=\"flip-container\">",
+	"\t<div class=\"flip-inner\">",
+	"\t\t<div class=\"flip-front\">лицо</div>",
+	"\t\t<div class=\"flip-back\">спина</div>",
+	"\t</div>",
+	"</div>",
+],
+"description": "Переворот кнопки"
+},
+//!свойства кнопки перевертышь//
+	"flip-btn": {
+		"prefix": "flip",
+		"scope": "css",
+		"body": [
+			"/* ============================Анима-flip======================================== */",
+			"",
+			"/* можно убрать ширину и  длину т.к нужно что бы размер задавался другим классом - это стили глобальные, общие */",
+			"\t.flip-container {",
+			"\t\twidth: 200px;",
+			"\t\theight: 150px;",
+			"\t\tborder: 1px solid #000;",
+			"\t\t",
+			"\t\tperspective: 1000px;",
+			"\t\t/*самое важное свойство*/",
+			"\t}",
+			"",
+			"\t.flip-inner {",
+			"\t\t/*width/height    — тоже 200х150 (как у родителя)*/",
+			"\t\twidth: 100%;",
+			"\t\theight: 100%;",
+			"\t\tposition: relative;",
+			"\t\t",
+			"\t\ttransition: transform 0.6s;",
+			"\t\t/* ← плавность */",
+			"\t\ttransform-style: preserve-3d;",
+			"\t\t/* ← 3D для детей */",
+			"\t}",
+			"",
+			"/*Когда мы наводим курсор на .flip-container, находим .flip-inner внутри него и ВРАЩАЕМ его на 180 градусов вокруг оси Y.*/",
+			"\t.flip-container:hover .flip-inner {",
+			"\ttransform: rotateY(180deg);",
+			"}",
+			"",
+			"/* обязательные стили для кнопок",
+			"- position: absolute — накладываем их друг на друга",
+			"   - width/height: 100% — размер как у контейнера",
+			"   - backface-visibility: hidden — СКРЫВАЕМ «спину» элемента,",
+			"                                    чтобы не было видно",
+			"обратной стороны сквозь лицевую */",
+			"\t.flip-front,",
+			"\t.flip-back {",
+			"\t\tposition: absolute;",
+			"\t\twidth: 100%;",
+			"\t\theight: 100%;",
+			"\t\tbackface-visibility: hidden;",
+			"\t}",
+			"",
+			"/* стилизуем отдельно отдельно карты для красоты, а для --back ставим transform: rotateY(180deg), что бы она изначально была повернута */",
+			"\t.flip-front {",
+			"\t\tbackground-color: yellow;",
+			"\t}",
+			"",
+			"\t.flip-back {",
+			"\t\tbackground-color: red;",
+			"\t\ttransform: rotateY(180deg);",
+			"\t}",
+		],
+		"description": "Основ.свойства flip"
+	},
+}

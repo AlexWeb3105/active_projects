@@ -25,23 +25,41 @@
 	</head>
 
 	<body>
+		fl
 		<div class="active-projects">
 			<div class="container">
 				<h1 class="active-projects__title">
 					Активные проекты
 				</h1>
 				<div class="active-project__buttons">
-					<a class="active-project__btn"
-						 href="./Fit-Studio/index.html">
-						Fit-Studio
-					</a>
-					<a href="./Nike/index.html"
-						 class="active-project__btn">
-						Nike
-					</a>
-					
+					<div class="flip-container">
+						<div class="flip-inner">
+							<a class="active-project__btn flip--front"
+								 href="">
+								Fit-Studio
+							</a>
+							<a class="active-project__btn flip--back"
+								 href="./Fit-Studio/index.html">
+								Fit-Studio
+							</a>
+						</div>
+					</div>
+					<div class="flip-container">
+						<div class="flip-inner">
+							<a href="./Nike/index.html"
+								 class="active-project__btn flip--front">
+								Nike
+							</a>
+							<a href="./Nike/index.html"
+								 class="active-project__btn flip--back">
+								Nike-back
+							</a>
+						</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
 	</body>
+
 </html>

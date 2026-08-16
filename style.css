@@ -56,8 +56,53 @@ a {
 	font-style: normal;
 }
 
-.active-project__btn:hover {
-	background-color: #593c63;
-	transform: translateY(1px);
-	box-shadow: inset 0px 0px 15px -3px #ffffff;
+/* ============================Анима-flip======================================== */
+
+/* можно убрать ширину и  длину т.к нужно что бы размер задавался другим классом - это стили глобальные, общие */
+.flip-container {
+	width: 200px;
+	height: 150px;
+	/*border: 1px solid #000;*/
+
+	perspective: 1000px;
+	/*самое важное свойство*/
+}
+
+.flip-inner {
+	/*width/height    — тоже 200х150 (как у родителя)*/
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	transition: transform 0.6s;
+	/* ← плавность */
+	transform-style: preserve-3d;
+	/* ← 3D для детей */
+}
+
+/*Когда мы наводим курсор на .flip-container, находим .flip-inner внутри него и ВРАЩАЕМ его на 180 градусов вокруг оси Y.*/
+.flip-container:hover .flip-inner {
+	transform: rotateY(180deg);
+}
+
+/* обязательные стили для кнопок
+- position: absolute — накладываем их друг на друга
+   - width/height: 100% — размер как у контейнера
+   - backface-visibility: hidden — СКРЫВАЕМ «спину» элемента,
+                                    чтобы не было видно
+                                    обратной стороны сквозь лицевую */
+.flip--front,
+.flip--back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+/* стилизуем отдельно отдельно карты для красоты, а для --back ставим transform: rotateY(180deg), что бы она изначально была повернута */
+.flip--front {}
+
+.flip--back {
+	transform: rotateY(180deg);
+
 }

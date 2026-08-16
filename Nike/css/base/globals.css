@@ -43,7 +43,7 @@ section {
 }
 
 /*заголовок карточек в разных секций*/
-.article-title  {
+.article-title {
 	color: var(--main-color);
 	font-family: var(--font-semBold);
 	font-size: 18px;
@@ -92,12 +92,13 @@ section {
 }
 
 :focus-visible {
-	outline: 2px solid var(--accent-color);
+	outline: 2px dashed var(--accent-color);
 	outline-offset: 3px;
 	/* Фокус при нажатии Tab */
 }
 
-.btn-active:active {
+.btn-active:active,
+.top-models__card-link:active {
 	transform: translateY(2px);
 	/* эффект «вдавливания» */
 }
@@ -119,8 +120,9 @@ picture {
 /*! убрать в конце */
 .hero,
 .air-mag,
-.sizes,
-.header,
-.characteristic {
+.footer,
+/*.sizes,*/
+.characteristic,
+.header {
 	display: none;
 }
