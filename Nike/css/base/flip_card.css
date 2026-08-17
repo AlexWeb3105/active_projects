@@ -47,10 +47,10 @@
 }
 
 .top-models__flip-back {
-	
+
 	/*border: 2px solid var(--accent-color);
 	border-radius: 12px;*/
-		
+
 	transform: rotateY(180deg);
 }
 
@@ -61,6 +61,32 @@
 	font-size: 10px;
 }
 
-.label__flip-back{
-	font-size: 15px;
+.label__flip-back {
+	font-size: 17px;
+	padding-bottom: 6px;
+}
+
+.selector__flip-back {
+	display: flex;
+	
+}
+
+.variants-list__flip-back {
+	padding-bottom: 10px;
+}
+
+.quick-buy__flip-back {
+	padding: 5px;
+}
+
+.buy-search__flip-back {
+	width: 51px;
+	
+}
+.order__flip-back{
+	width: 100%;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
