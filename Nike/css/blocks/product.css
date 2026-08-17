@@ -131,13 +131,13 @@
 }
 
 @media (any-hover: hover) {
-	/*.product__size-button--available:hover {
+	.product__size-button--available:hover {
 		border: 1px solid var(--accent-color);
 		box-shadow:
 			0px 0px 10px -5px var(--accent-color),
 			inset 0px 0px 10px -5px var(--accent-color);
 	}
-}*/
+}
 
 	.product__buttons-group {
 		display: flex;

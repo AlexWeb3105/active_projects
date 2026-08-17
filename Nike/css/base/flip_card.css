@@ -54,9 +54,7 @@
 	padding: 10px;
 	border-radius: 12px;
 	transform: rotateY(180deg);
-	box-shadow:
-		
-		inset 0px 0px 30px 3px var(--accent-color-opc);
+	box-shadow: inset 0px 0px 30px 3px var(--accent-color-opc);
 }
 
 .btn__flip-back {
@@ -67,10 +65,10 @@
 	
 }
 
-.btn__flip-back:active {
+/*.btn__flip-back:active {
 	border-color: var(--accent-color);
 	color: var(--accent-color);
-}
+}*/
 
 .label__flip-back {
 	font-size: 17px;
@@ -106,4 +104,4 @@
 	align-items: center;
 }
 
-.btn__flip-back
+.btn__flip-back{}
