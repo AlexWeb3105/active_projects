@@ -50,8 +50,13 @@
 
 	/*border: 2px solid var(--accent-color);
 	border-radius: 12px;*/
-
+	border: 2px dashed var(--accent-color);
+	padding: 10px;
+	border-radius: 12px;
 	transform: rotateY(180deg);
+	box-shadow:
+		
+		inset 0px 0px 30px 3px var(--accent-color-opc);
 }
 
 .btn__flip-back {
@@ -59,6 +64,12 @@
 	height: 30px;
 	border-radius: 5px;
 	font-size: 10px;
+	
+}
+
+.btn__flip-back:active {
+	border-color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .label__flip-back {
@@ -68,7 +79,7 @@
 
 .selector__flip-back {
 	display: flex;
-	
+
 }
 
 .variants-list__flip-back {
@@ -77,16 +88,22 @@
 
 .quick-buy__flip-back {
 	padding: 5px;
+	letter-spacing: 0px;
+	text-transform: none;
+	line-height: normal;
 }
 
 .buy-search__flip-back {
 	width: 51px;
-	
+	height: 45px;
 }
-.order__flip-back{
+
+.order__flip-back {
 	width: 100%;
 	padding-top: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
+.btn__flip-back
