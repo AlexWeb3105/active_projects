@@ -58,50 +58,6 @@
 }
 
 .btn__flip-back {
-	width: 30px;
-	height: 30px;
-	border-radius: 5px;
-	font-size: 10px;
-	
+		
 }
 
-/*.btn__flip-back:active {
-	border-color: var(--accent-color);
-	color: var(--accent-color);
-}*/
-
-.label__flip-back {
-	font-size: 17px;
-	padding-bottom: 6px;
-}
-
-.selector__flip-back {
-	display: flex;
-
-}
-
-.variants-list__flip-back {
-	padding-bottom: 10px;
-}
-
-.quick-buy__flip-back {
-	padding: 5px;
-	letter-spacing: 0px;
-	text-transform: none;
-	line-height: normal;
-}
-
-.buy-search__flip-back {
-	width: 51px;
-	height: 45px;
-}
-
-.order__flip-back {
-	width: 100%;
-	padding-top: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.btn__flip-back{}
