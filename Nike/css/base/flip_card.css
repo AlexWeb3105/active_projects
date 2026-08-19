@@ -2,9 +2,8 @@
 
 /* можно убрать ширину и  длину т.к нужно что бы размер задавался другим классом - это стили глобальные, общие */
 .top-models__flip-container {
-	/*width: 200px;
-		height: 150px;
-		border: 1px solid #000;*/
+	width: min(100%, 400px);
+	height: 204px;
 
 	perspective: 1000px;
 	/*самое важное свойство*/
@@ -57,7 +56,4 @@
 	box-shadow: inset 0px 0px 30px 3px var(--accent-color-opc);
 }
 
-.btn__flip-back {
-		
-}
-
+.btn__flip-back {}
