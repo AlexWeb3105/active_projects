@@ -2,6 +2,7 @@ import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
 import { swiper } from "./slider.js";
 import { sizes } from "./sizes.js";
+import { sizesFlipback } from "./sizes_flip_back.js";
 
 try {
   const headerFixed = new HeaderFixed({
@@ -29,6 +30,7 @@ try {
   );
   new Swiper();
   sizes();
+	sizesFlipback();
 } catch (error) {
   console.error(error);
 }
