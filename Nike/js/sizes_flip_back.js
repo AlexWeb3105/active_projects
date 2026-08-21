@@ -1,17 +1,48 @@
+//!!===============моя версия======================
+//export const sizesFlipback = () => {
+//  const sizesList = document.querySelector('[data-sizes="sizes-row_list"]');
+//  const sizesButtons = document.querySelectorAll('[data-sizes="button"]');
+
+//  const handleSizeClick = (event) => {
+//    const target = event.target;
+
+//    if (!target?.classList.contains("size-badge")) return;
+
+//    sizesButtons.forEach((button) =>
+//      button.classList.remove("size-badge--active")
+//    );
+//    target.classList.add("size-badge--active");
+//  };
+
+//  sizesList.addEventListener("click", handleSizeClick);
+//};
+//=============================================================
+
+//====================================ИИ===============================
 export const sizesFlipback = () => {
-  const sizesList = document.querySelector('[data-sizes="flip_list"]');
+  // Получаем все списки размеров
+  const sizesLists = document.querySelectorAll('[data-sizes="sizes-row_list"]');
+  // Получаем все кнопки размеров
   const sizesButtons = document.querySelectorAll('[data-sizes="button"]');
 
+  // Функция обработки клика
   const handleSizeClick = (event) => {
     const target = event.target;
 
-    if (!target?.classList.contains("size-badge--available")) return;
+    if (!target?.classList.contains("size-badge")) return;
 
-    sizesButtons.forEach((button) =>
-      button.classList.remove("product__size-button--active")
+    // Снимаем активный класс со всех кнопок
+    sizesButtons.forEach((button) => 
+      button.classList.remove("size-badge--active")
     );
-    target.classList.add("product__size-button--active");
+    
+    // Добавляем активный класс на нажатую кнопку
+    target.classList.add("size-badge--active");
   };
 
-  sizesList.addEventListener("click", handleSizeClick);
+  // Добавляем обработчик на каждый список размеров
+  sizesLists.forEach(list => {
+    list.addEventListener("click", handleSizeClick);
+  });
 };
+//================================================================
