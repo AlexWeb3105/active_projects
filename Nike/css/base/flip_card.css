@@ -152,10 +152,10 @@
 	/*background: #fff4e5;*/
 	color: var(--main-color);
 	border-color: var(--main-color);
-	
+
 }
 
-.size-badge--active{
+.size-badge--active {
 	color: var(--accent-color);
 	border-color: var(--accent-color);
 	transform: translateY(2px);
@@ -183,23 +183,20 @@
 
 .btn:active {
 	transform: scale(0.97);
+	border-style: dashed;
+	color: var(--accent-color);
+	transition: transform 0.5s;
 }
 
-.btn--buy {
-	background: #1a8a4a;
-	color: #fff;
-}
-
-.btn--buy:hover {
-	background: #157a41;
-}
-
+.btn--buy,
 .btn--preorder {
-	background: #fff4e5;
-	color: #c47a10;
-	border: 1.5px solid #f5d9a0;
+	background: inherit;
+	color: #fff;
+	border: 1px solid var(--accent-color);
 }
 
+.btn--buy:hover,
 .btn--preorder:hover {
-	background: #ffebcc;
+	box-shadow: inset 0px 0px 8px 3px var(--accent-color-opc);
+	transition: box-shadow 0.5s;
 }
