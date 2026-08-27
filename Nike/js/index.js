@@ -1,5 +1,6 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
+import Modal from './modal.js'
 import { swiper } from "./slider.js";
 import { sizes } from "./sizes.js";
 import { sizesFlipback } from "./sizes_flip_back.js";
@@ -28,9 +29,13 @@ try {
     },
     headerFixed,
   );
-  new Swiper();
+  new Modal({
+    PAGE_BODY: "page__body",
+    PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
+  });
+  new swiper();
   sizes();
-	sizesFlipback();
+  sizesFlipback();
 } catch (error) {
   console.error(error);
 }
