@@ -1184,7 +1184,35 @@
 				</a>
 			</div>
 		</footer>
-		
+		<!-- Кнопка открытия -->
+		<button data-modal-button="buy"
+						data-modal-speed="1000">Открыть модалку с задержкой 1с</button>
+		<button data-modal-button="two"
+						ata-modal-speed="600">Открыть вторую модалку с задержкой 0,6с</button>
+
+
+		<!-- Структура модального окна -->
+		<div class="modal"> <!--обертка для всех модальных окон-->
+
+			<!--первое модальное окно-->
+			<div class="modal__window"
+					 data-modal-window="buy">
+				<h2>Заголовок модалки</h2>
+				<p>Текст модалки</p>
+				<!-- Кнопка закрытия -->
+				<button data-modal-close>Закрыть</button>
+			</div>
+
+			<!--второе модальное окно-->
+			<div class="modal__window"
+					 data-modal-window="two">
+				<h2>Заголовок модалки</h2>
+				<p>Текст второй модалки</p>
+				<!-- Кнопка закрытия -->
+				<button data-modal-close>Закрыть</button>
+			</div>
+		</div>
+
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 	<script type="module"
@@ -1193,5 +1221,5 @@
 					type="module"></script>
 
 
-			
+
 </html>

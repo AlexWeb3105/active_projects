@@ -33,6 +33,7 @@ try {
     PAGE_BODY: "page__body",
     PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
   });
+	
   new swiper();
   sizes();
   sizesFlipback();
