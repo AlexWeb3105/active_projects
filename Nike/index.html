@@ -330,6 +330,8 @@
 									</ul>
 									<div class="product__buttons-group">
 										<button class="product__quick-buy btn-active"
+														data-modal-button="buy"
+														data-modal-speed="1000"
 														aria-label="Кнопка для быстрой покупки"
 														title="Купить в 1 клик">
 											Купить в 1 клик
@@ -1184,33 +1186,66 @@
 				</a>
 			</div>
 		</footer>
-		<!-- Кнопка открытия -->
-		<button data-modal-button="buy"
-						data-modal-speed="1000">Открыть модалку с задержкой 1с</button>
-		<button data-modal-button="two"
-						ata-modal-speed="600">Открыть вторую модалку с задержкой 0,6с</button>
-
 
 		<!-- Структура модального окна -->
-		<div class="modal"> <!--обертка для всех модальных окон-->
-
+		<div class="modal modal--open"> <!--обертка для всех модальных окон-->
 			<!--первое модальное окно-->
-			<div class="modal__window"
+			<div class="modal__window modal__window--open"
 					 data-modal-window="buy">
-				<h2>Заголовок модалки</h2>
-				<p>Текст модалки</p>
-				<!-- Кнопка закрытия -->
+				<div class="form-card">
+					<div class="form-header">
+						<h2>Оформление заказа</h2>
+						<p>Заполните форму, и мы свяжемся с вами для подтверждения</p>
+					</div>
+					<form class="purchase-form"
+								action="#"
+								method="POST">
+						<!-- Поле Имя -->
+						<div class="form-group">
+							<label for="name">Ваше имя</label>
+							<input type="text"
+										 id="name"
+										 name="name"
+										 placeholder="Иван Иванов"
+										 required>
+						</div>
+						<!-- Поле Телефон -->
+						<div class="form-group">
+							<label for="phone">Телефон</label>
+							<input type="tel"
+										 id="phone"
+										 name="phone"
+										 placeholder="+7 (999) 000-00-00"
+										 required>
+						</div>
+						<!-- Поле Email -->
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email"
+										 id="email"
+										 name="email"
+										 placeholder="example@mail.com"
+										 required>
+						</div>
+						<!-- Комментарий -->
+						<div class="form-group">
+							<label for="comment">Комментарий</label>
+							<textarea id="comment"
+												name="comment"
+												rows="3"
+												placeholder="Дополнительная информация..."></textarea>
+						</div>
+						<!-- Кнопка отправки -->
+						<button type="submit"
+										class="submit-btn">Отправить заявку</button>
+						<div class="footer-note">
+							Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+						</div>
+					</form>
+				</div>
 				<button data-modal-close>Закрыть</button>
 			</div>
-
-			<!--второе модальное окно-->
-			<div class="modal__window"
-					 data-modal-window="two">
-				<h2>Заголовок модалки</h2>
-				<p>Текст второй модалки</p>
-				<!-- Кнопка закрытия -->
-				<button data-modal-close>Закрыть</button>
-			</div>
+		</div>
 		</div>
 
 	</body>
