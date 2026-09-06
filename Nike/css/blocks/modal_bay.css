@@ -4,9 +4,9 @@
 	max-width: 480px;
 	padding: 40px;
 	border-radius: 16px;
-
 	box-shadow: 4px 4px 11px -1px #000000ff,
 		-3px -3px 17px -10px #ffffff96;
+	position: relative;
 }
 
 
@@ -17,7 +17,7 @@
 }
 
 .form-header h2 {
-	
+
 	font-size: clamp(15px, -19.20px + 7.20vw, 24px);
 	font-weight: 600;
 	margin-bottom: 8px;
@@ -42,7 +42,6 @@
 	margin-bottom: 6px;
 	color: var(--main-color);
 	text-align: left;
-					
 }
 
 /* Стили полей ввода */
@@ -52,7 +51,7 @@
 	color: var(--main-color);
 	width: 100%;
 	padding: 12px 16px;
-	font-size: 14px;
+	font-size: 16px;
 	border: 0px solid black;
 	border-radius: 8px;
 	background-color: var(--bg-color);
@@ -74,8 +73,13 @@
 .form-group textarea:focus {
 	outline: none;
 	box-shadow: 4px 4px 11px -1px #000000ff, 0px 0px 13px -5px #ffffff96;
-	font-size: 15px	;
 }
+
+.form-group input:focus::placeholder {
+	transform: translateX(5px);
+	transition: var(--anima);
+}
+
 
 /* Кнопка отправки */
 .submit-btn {
@@ -85,7 +89,7 @@
 	font-size: 16px;
 	font-weight: 600;
 	color: #ffffff;
-		/* Основной цвет кнопки */
+	/* Основной цвет кнопки */
 	border: solid 1px var(--accent-color-opc);
 	border-radius: 8px;
 	cursor: pointer;
@@ -111,4 +115,20 @@
 	font-size: 12px;
 	color: #9ca3af;
 	margin-top: 20px;
+}
+
+.modal__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: var(--accent-color-opc);
+	transition: var(--anima);
+}
+
+@media (any-hover: hover) {
+	.modal__close:hover {
+		transform: scale(1.2);
+		color: var(--accent-color);
+		transition: var(--anima);
+	}
 }

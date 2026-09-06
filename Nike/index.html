@@ -1186,11 +1186,10 @@
 				</a>
 			</div>
 		</footer>
-
 		<!-- Структура модального окна -->
-		<div class="modal modal--open"> <!--обертка для всех модальных окон-->
+		<div class="modal"> <!--обертка для всех модальных окон-->
 			<!--первое модальное окно-->
-			<div class="modal__window modal__window--open"
+			<div class="modal__window"
 					 data-modal-window="buy">
 				<div class="form-card">
 					<div class="form-header">
@@ -1200,7 +1199,6 @@
 					<form class="purchase-form"
 								action="#"
 								method="POST">
-						<!-- Поле Имя -->
 						<div class="form-group">
 							<label for="name">Ваше имя</label>
 							<input type="text"
@@ -1209,7 +1207,6 @@
 										 placeholder="Иван Иванов"
 										 required>
 						</div>
-						<!-- Поле Телефон -->
 						<div class="form-group">
 							<label for="phone">Телефон</label>
 							<input type="tel"
@@ -1218,7 +1215,6 @@
 										 placeholder="+7 (999) 000-00-00"
 										 required>
 						</div>
-						<!-- Поле Email -->
 						<div class="form-group">
 							<label for="email">Email</label>
 							<input type="email"
@@ -1227,7 +1223,6 @@
 										 placeholder="example@mail.com"
 										 required>
 						</div>
-						<!-- Комментарий -->
 						<div class="form-group">
 							<label for="comment">Комментарий</label>
 							<textarea id="comment"
@@ -1235,15 +1230,21 @@
 												rows="3"
 												placeholder="Дополнительная информация..."></textarea>
 						</div>
-						<!-- Кнопка отправки -->
 						<button type="submit"
 										class="submit-btn">Отправить заявку</button>
 						<div class="footer-note">
 							Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
 						</div>
 					</form>
+					<button class="modal__close"
+									data-modal-close>
+						<svg class="modal__close-icon"
+								 width="24"
+								 height="24">
+							<use href="./icon/sprite.svg#close-icon" />
+						</svg>
+					</button>
 				</div>
-				<button data-modal-close>Закрыть</button>
 			</div>
 		</div>
 		</div>

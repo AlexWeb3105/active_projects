@@ -445,7 +445,7 @@
 					viewBox="0 0 24 24"
 					fill="none">
 		<path d="M18 6L6 18M6 6L18 18"
-					stroke="#C9C69B"
+					stroke="currentColor"
 					stroke-width="2"
 					stroke-linecap="round"
 					stroke-linejoin="round" />
