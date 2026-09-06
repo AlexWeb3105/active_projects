@@ -40,7 +40,7 @@
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
-	
+
 }
 
 /* стилизуем отдельно отдельно карты для красоты, а для --back ставим transform: rotateY(180deg), что бы она изначально была повернута */
@@ -146,9 +146,8 @@
 
 /* Размеры под заказ — оранжевые */
 .size-badge--preorder {
-	/*background: #fff4e5;*/
-	color: var(--main-color);
-	border-color: var(--main-color);
+	color: var(--disable-color);
+	border-color: var(--disable-color);
 
 }
 
