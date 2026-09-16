@@ -1,9 +1,5 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
-import { sizesFlipback } from "./sizes_flip_back.js";
-import Modal from './modal.js'
-import { swiper } from "./slider.js";
-import { sizes } from "./sizes.js";
 
 try {
   const headerFixed = new HeaderFixed({
@@ -29,14 +25,6 @@ try {
     },
     headerFixed,
   );
-  new Modal({
-    PAGE_BODY: "page__body",
-    PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
-  });
-	
-  sizesFlipback();
-  swiper();
-  sizes();
 } catch (error) {
   console.error(error);
 }

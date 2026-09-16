@@ -1,3 +1,18 @@
+body{
+	background: #a58282;
+	height: 2000px;
+}
+
+button{
+	background: red;
+	
+}
+
+header{
+	position: fixed;
+	width: 100px;
+	border: 1px solid #000;
+}
 @media (width>820px) {
 	.header__burger {
 		display: none;
@@ -6,25 +21,15 @@
 }
 
 @media (width<=820px) {
-	.header__burger {
+		.header__burger {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		z-index: 1;
 	}
 
-	/*!================у препода запись==========*/
-	/*.burger__menu,
-	.burger__open .burger__menu-close {
-		display: block;
-	}
-
-	.burger__close,
-	.burger__open .burger__menu-open {
-		display: none;
-	}*/
-
 	/*===========================класс добавляется burger__open на button===================*/
+	/* !================разобрать! */
 	.burger__menu-open {
 		display: block;
 	}
@@ -32,7 +37,7 @@
 	.burger__menu-close {
 		display: none;
 	}
-
+/* !================================== */
 	/*! Если появится первый класс, то выполняется следующий класс - это если писать НЕ через запятую классы*/
 	.burger--open .burger__menu-open {
 		display: none;
@@ -50,17 +55,17 @@
 		right: -100vw;
 		top: 0;
 		bottom: 0;
-		z-index: var(--layer-1);
+		z-index: 3;
 		
 		overflow: hidden;
 		opacity: 0;
 		
-		background-color: var(--bg-color);
-		box-shadow: 0 0 20px 0 var(--shadow-menu);
+		background-color: gray;
+		box-shadow: 0 0 20px 0 #000;
 		padding-top: 144px;
 		padding-right: 15px;
 		min-width: 297px;
-		transition: var(--anima);
+		transition: all 0.5s;
 		/*overflow 0.2s, opacity 0.2s, right 0.2s;*/
 	}
 	
@@ -84,4 +89,13 @@
 	font-style: normal;
 	font-weight: 300;
 	line-height: 130%;
+}
+
+.page__body--no-scroll {
+	/*убираем скролл если накидывается на этот класс при открытие бургера*/
+	overflow-y: hidden;
+}
+
+.header--fixed {
+	box-shadow: 0 0 20px 0 #fff;
 }
