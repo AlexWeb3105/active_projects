@@ -1,45 +1,39 @@
-body{
+body {
 	background: #a58282;
 	height: 2000px;
 }
 
-button{
-	background: red;
-	
-}
 
-header{
-	position: fixed;
-	width: 100px;
+header {
+	/*position: fixed;*/
 	border: 1px solid #000;
 }
+
 @media (width>820px) {
 	.header__burger {
 		display: none;
 	}
-
 }
 
 @media (width<=820px) {
-		.header__burger {
+	.header__burger {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		z-index: 1;
 	}
 
-	/*===========================класс добавляется burger__open на button===================*/
-	/* !================разобрать! */
-	.burger__menu-open {
+		.burger__menu-open {
 		display: block;
+		color: #000;
 	}
 
 	.burger__menu-close {
 		display: none;
+		color: red;
 	}
-/* !================================== */
-	/*! Если появится первый класс, то выполняется следующий класс - это если писать НЕ через запятую классы*/
-	.burger--open .burger__menu-open {
+
+		.burger--open .burger__menu-open {
 		display: none;
 	}
 
@@ -49,32 +43,31 @@ header{
 }
 
 @media (width<=820px) {
-.header__menu {
-	/*! Задали минимальную ширину т.к если задавать падинги, как в макете, то при добавление букв в названия меню, то он расширятся */
-		position: fixed;
+	.header__menu {
+				position: fixed;
 		right: -100vw;
 		top: 0;
 		bottom: 0;
 		z-index: 3;
-		
+
 		overflow: hidden;
 		opacity: 0;
-		
-		background-color: gray;
+
+		background-color: rgb(129, 19, 19);
 		box-shadow: 0 0 20px 0 #000;
 		padding-top: 144px;
 		padding-right: 15px;
 		min-width: 297px;
 		transition: all 0.5s;
-		/*overflow 0.2s, opacity 0.2s, right 0.2s;*/
+		
 	}
-	
+
 	.header__menu--open {
 		right: 0;
 		overflow: visible;
 		opacity: 1;
 	}
-	
+
 	.header__menu .menu__list {
 		flex-direction: column;
 		justify-content: end;
