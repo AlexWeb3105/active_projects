@@ -1,5 +1,5 @@
 import HeaderFixed from "./header.js";
-import BurgerMenu from "./burger_test.js";
+import BurgerMenu from "./burger.js";
 
 try {
 	const headerFixed = new HeaderFixed({
