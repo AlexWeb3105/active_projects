@@ -1,0 +1,7 @@
+:root {
+	/* шрифты */
+
+	--satoshi-400: 'Satoshi-Regular', sans-serif;
+	--satoshi-500: 'Satoshi-Medium', sans-serif;
+	--satoshi-700: 'Satoshi-Bold', sans-serif;
+}

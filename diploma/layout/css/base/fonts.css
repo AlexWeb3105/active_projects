@@ -1,5 +1,39 @@
 @font-face {
-	font-family: "Integra-Regul";
-	src: url('../../fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff2') format('woff2'), url('../../fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff') format('woff'), 
-	;
+	font-family: 'Inter';
+	src:
+		url('../../fonts/Inter-Regular-2.woff2') format('woff2'),
+		url('../../fonts/Inter-Regular-2.woff') format('woff');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Satoshi-Regular';
+	src:
+		url('../../fonts/satoshi-fonts/Satoshi-Regular.woff2') format('woff2'),
+		url('../../fonts/satoshi-fonts/Satoshi-Regular.woff') format('woff');
+		font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Satoshi-Medium';
+	src:
+		url('../../fonts/satoshi-fonts/Satoshi-Medium.woff') format('woff2'),
+		url('../../fonts/satoshi-fonts/Satoshi-Medium.woff2') format('woff');
+		font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Satoshi-Bold';
+	src:
+		url('../../fonts/satoshi-fonts/Satoshi-Bold.woff') format('woff2'),
+		url('../../fonts/satoshi-fonts/Satoshi-Bold.woff2') format('woff');
+		font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
