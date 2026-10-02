@@ -1,3 +1,4 @@
 @import url(./base/vars.css);
 @import url(./base/fonts.css);
-@import url(./base/hero.css);
+@import url(./base/globals.css);
+@import url(./blocks/top-bar.css);
