@@ -16,16 +16,17 @@
 .top-bar__link {
 	text-decoration-line: underline;
 	text-decoration-style: solid;
-	text-decoration-skip-ink: none;
-	text-decoration-thickness: auto;
-	text-underline-offset: auto;
-	text-underline-position: from-font;
-
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 1px;
 }
 
 .button-close {
 	/* 82.5px - 282px 1200-390 */
 	margin-left: clamp(82.5px, -13.56px + 24.63vw, 282px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 
