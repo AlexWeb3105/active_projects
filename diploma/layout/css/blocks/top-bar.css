@@ -8,11 +8,11 @@
 
 .top-bar__container {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 
 	height: 38px;
-	/*width: 100%;*/
+	width: 100%;
 	color: #fff;
 	padding-block: 9px;
 }
@@ -41,9 +41,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
-
 
 @media (width<=960px) {
 	.top-bar__text {
