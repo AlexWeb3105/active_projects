@@ -1,5 +1,9 @@
 .top-bar {
 	background: #000;
+	transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+	max-height: 100px;
+	opacity: 1;
+	overflow: hidden;
 }
 
 .top-bar__container {
@@ -12,6 +16,16 @@
 	color: #fff;
 	padding-block: 9px;
 }
+
+/* через ии Гига-код */
+.top-bar.is-hidden {
+	max-height: 0;
+	opacity: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+}
+
 
 .top-bar__link {
 	text-decoration-line: underline;
