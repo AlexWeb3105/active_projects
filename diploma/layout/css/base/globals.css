@@ -9,11 +9,21 @@
 	background-color: rgb(37, 36, 36);
 }
 
-.page__body{
+.page__body {
 	min-width: 375px;
 }
+
 .container {
 	width: min(1240px, 100% - 15px * 2);
 	margin-inline: auto;
 }
 
+.logo {
+	color: #000;
+	font-family: var(--integral);
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	text-transform: uppercase;
+}

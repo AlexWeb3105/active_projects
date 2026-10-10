@@ -1,4 +1,22 @@
+.header {
+}
 .header__container {
-	height: 100px;
-	background-color: green;
+}
+.header__logo {
+}
+.header__nav {
+}
+.nav__link {
+}
+.header__search {
+}
+.search-form {
+}
+.search-form__input-wrapper {
+}
+.search-form__input {
+}
+.search-form__button {
+}
+.header__controls {
 }

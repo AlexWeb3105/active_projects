@@ -10,21 +10,24 @@
 					href="./css/base/normalize.css">
 		<link rel="stylesheet"
 					href="./css/index.css">
-					<script type="module" src="./js/index.js"></script>
+		<script type="module"
+						src="./js/index.js"></script>
 
 		<title>Подготовка к верстке</title>
 	</head>
 
 	<body class="page__body">
-		<div class="top-bar" id="topBar">
+		<div class="top-bar"
+				 id="topBar">
 			<div class="container top-bar__container">
 				<span class="top-bar__text">
 					Зарегистрируйтесь и получите скидку 20% на первую покупку.&nbsp;
 				</span>
 				<a href="#"
 					 class="top-bar__link">Зарегистрироваться сейчас
-				</a>			
-				<button class="button-close" type="button"
+				</a>
+				<button class="button-close"
+								type="button"
 								aria-label="закрыть"
 								title="закрыть">
 					<svg width="20"
@@ -34,12 +37,53 @@
 				</svg>
 			</div>
 		</div>
-<header class="header">
-	<div class="container header__container">
-		dghd
-	</div>
-</header> 
-
+		<header class="header">
+			<div class="container header__container">
+				<div class="logo header__logo">
+					shop.co
+				</div>
+				<nav class="header__nav">
+					<a href="#"
+						 class="nav__link">Магазин</a>
+					<a href="#"
+						 class="nav__link">Скидки</a>
+					<a href="#"
+						 class="nav__link">Новые поступления</a>
+					<a href="#"
+						 class="nav__link">Бренды</a>
+				</nav>
+				<search class="header__search">
+					<form action=""
+								class="search-form"
+								action="/search"
+								method="GET">
+						<div class="search-form__input-wrapper">
+							<input id="site-search"
+										 class="search-form__input"
+										 type="search"
+										 name="q"
+										 placeholder="Искать товары..."
+										 autocomplete="off"
+										 aria-label="Поиск по сайту">
+							<button class="search-form__button"
+											type="submit"
+											aria-label="Найти"
+											title="Найти">Иконку
+							</button>
+						</div>
+					</form>
+				</search>
+				<div class="header__controls">
+					<svg width="24" height="24" >
+					<use href="./icon/sprite.svg#basket"/>
+					</svg>
+					<svg width="24" height="24" >
+					<use href="./icon/sprite.svg#user"/>
+					</svg>
+				</div>
+			</div>
+		</header>
+<!-- можно стилизовать хедер -->
 	</body>
 
 </html>

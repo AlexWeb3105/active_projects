@@ -1,9 +1,12 @@
 :root {
 	/* шрифты */
 
-	--fixel-400: 'Fixel-Regular', sans-serif;
-	--fixel-500: 'Fixel-Medium', sans-serif;
-	--fixel-700: 'Fixel-Bold', sans-serif;
+	--satoshi-400: 'Fixel-Regular', sans-serif; /*аналог сатоши*/
+	--satoshi-500: 'Fixel-Medium', sans-serif;
+	--satoshi-700: 'Fixel-Bold', sans-serif;
+
+	--integral: 'Inter', sans-serif; /*аналог Intgral */
+	
 
 	/* color */
 
