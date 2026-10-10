@@ -1,22 +1,31 @@
-.header {
-}
+.header {}
+
 .header__container {
+	display: flex;
+	align-items: center;
 }
-.header__logo {
-}
-.header__nav {
-}
-.nav__link {
-}
-.header__search {
-}
-.search-form {
-}
+
+.header__logo {}
+
+.header__nav {}
+
+.nav__link {}
+
+.header__search {}
+
+.search-form {}
+
 .search-form__input-wrapper {
+	position: relative;
 }
-.search-form__input {
-}
+
+.search-form__input {}
+
 .search-form__button {
+	position: absolute;
+	left: 0;
+	top: 0;
+
 }
-.header__controls {
-}
+
+.header__controls {}
