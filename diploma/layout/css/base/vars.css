@@ -1,15 +1,20 @@
 :root {
 	/* шрифты */
+	/*аналог сатоши*/
+	--satoshi-400: 'Fixel-Regular', 'Satochi-Regular', sans-serif;
+	--satoshi-500: 'Fixel-Medium', 'Satochi-Medium', sans-serif;
+	--satoshi-700: 'Fixel-Bold', 'Satochi-Bold', sans-serif;
 
-	--satoshi-400: 'Fixel-Regular', sans-serif; /*аналог сатоши*/
-	--satoshi-500: 'Fixel-Medium', sans-serif;
-	--satoshi-700: 'Fixel-Bold', sans-serif;
 
-	--integral: 'Inter', sans-serif; /*аналог Intgral */
-	
+	/*аналог Intgral*/
+	--integral-900: 'Integral-Heavy', sans-serif;
+	--integral-800: 'Integral-ExtraBold', 'Inter-ExtraBold', sans-serif;
+
+	--integral-700: 'Integral-Bold', sans-serif;
+
 
 	/* color */
 
-	--bg-color:#fff;
-	--bg-hero:#F2F0F1;
+	--bg-color: #fff;
+	--bg-hero: #F2F0F1;
 }

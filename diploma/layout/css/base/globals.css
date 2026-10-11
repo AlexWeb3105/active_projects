@@ -1,12 +1,8 @@
 .page {
 	color: #000;
-	font-family: var(--satoshi-400);
+	font-family: var(--satoshi-400); 
 	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-
-	background-color: rgb(37, 36, 36);
+	background-color: #252424;
 }
 
 .page__body {
@@ -22,10 +18,10 @@
 	display: flex;
 	align-items: center;
 	color: #000;
-	font-family: var(--integral);
+	font-family: var(--integral-700);
 	font-size: 32px;
 	font-style: normal;
-	font-weight: 900;
+	
 	line-height: normal;
 	text-transform: uppercase;
 	width: 160px;
