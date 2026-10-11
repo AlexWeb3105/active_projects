@@ -1,17 +1,30 @@
-.header {}
+.header {
+	height: 96px;
+	background: var(--bg-color);
+	padding-block: 24px;
+}
 
 .header__container {
+	height: 40px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
 }
 
 .header__logo {}
 
-.header__nav {}
+.header__nav {
+	display: flex;
+	gap: 24px;
+}
 
 .nav__link {}
 
-.header__search {}
+.header__search {
+	width: min(100%, 462px);
+	background: #000;
+}
 
 .search-form {}
 
@@ -28,4 +41,9 @@
 
 }
 
-.header__controls {}
+.header__controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:14px ;
+}
