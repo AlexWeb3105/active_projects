@@ -34,3 +34,38 @@
 	font-style: normal;
 	font-display: swap;
 }
+/* ======================= */
+@font-face {
+	font-family: 'logo-bold';
+	src:
+		url('../../fonts/logo/IntegralCF-Bold.woff2') format('woff2');
+		font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'logo inter-xbold';
+	src:
+		url('../../fonts/logo/Inter-ExtraBold.woff2') format('woff2');
+		font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'logo ingral heavy';
+	src:
+		url('../../fonts/logo/IntegralCF-Heavy.woff2') format('woff2');
+		font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'logo ingral bold';
+	src:
+		url('../../fonts/logo/IntegralCF-Bold.woff2') format('woff2');
+		font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+

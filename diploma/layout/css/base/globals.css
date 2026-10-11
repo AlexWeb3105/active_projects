@@ -23,13 +23,13 @@
 	align-items: center;
 	color: #000;
 	font-family: var(--integral);
-	font-size: 29px;
+	font-size: 32px;
 	font-style: normal;
 	font-weight: 900;
 	line-height: normal;
 	text-transform: uppercase;
 	width: 160px;
 	height: 22px;
-	letter-spacing: 5px;
+	/*letter-spacing: 5px;*/
 
 }
