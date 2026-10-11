@@ -8,13 +8,19 @@
 
 .top-bar__container {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 
 	height: 38px;
-	width: 100%;
+
 	color: #fff;
 	padding-block: 9px;
+}
+
+.top-bar__text {
+	color: #FFF;
+	font-size: 14px;
+
 }
 
 /* через ии Гига-код */

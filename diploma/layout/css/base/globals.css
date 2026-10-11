@@ -1,6 +1,6 @@
 .page {
 	color: #000;
-	font-family: var(--fixel-400);
+	font-family: var(--satoshi-400);
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -19,11 +19,17 @@
 }
 
 .logo {
+	display: flex;
+	align-items: center;
 	color: #000;
 	font-family: var(--integral);
-	font-size: 32px;
+	font-size: 29px;
 	font-style: normal;
 	font-weight: 900;
 	line-height: normal;
 	text-transform: uppercase;
+	width: 160px;
+	height: 22px;
+	letter-spacing: 5px;
+
 }
