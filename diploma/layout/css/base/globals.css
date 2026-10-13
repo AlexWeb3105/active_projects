@@ -15,11 +15,11 @@
 }
 
 .logo {
-		color: #000;
+	display: inline;
+	color: #000;
 	font-family: var(--integral-700);
 	font-size: 32px;
 	height: 100%;
 	line-height: 27px;
-	
 
 }

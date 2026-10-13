@@ -1,9 +1,9 @@
 :root {
 	/* шрифты */
 	/*аналог сатоши*/
-	--satoshi-400: 'Fixel-Regular', 'Satochi-Regular', sans-serif;
-	--satoshi-500: 'Fixel-Medium', 'Satochi-Medium', sans-serif;
-	--satoshi-700: 'Fixel-Bold', 'Satochi-Bold', sans-serif;
+	--satoshi-400: 'Satochi-Regular', 'Fixel-Regular', sans-serif;
+	--satoshi-500: 'Satochi-Medium', 'Fixel-Medium', sans-serif;
+	--satoshi-700: 'Satochi-Bold', 'Fixel-Bold', sans-serif;
 
 
 	/*аналог Intgral*/
