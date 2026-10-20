@@ -39,19 +39,34 @@
 		</div>
 		<header class="header">
 			<div class="container header__container">
+				<button class="burger header__burger"
+								aria-label="Открыть меню"
+								aria-expanded="false"
+								aria-controls="header__menu">
+					<svg width="24"
+							 height="24">
+						<use class="burger__menu-open"
+								 href="./icon/sprite.svg#burger" />
+						<use class="burger__menu-close"
+								 href="./icon/sprite.svg#close-icon" />
+					</svg>
+				</button>
 				<div class="logo header__logo">
 					<a href="#">shop.co</a>
 				</div>
-				<nav class="header__nav">
-					<a href="#"
-						 class="nav__link">Магазин</a>
-					<a href="#"
-						 class="nav__link">Скидки</a>
-					<a href="#"
-						 class="nav__link">Новые поступления</a>
-					<a href="#"
-						 class="nav__link">Бренды</a>
+				<nav class="header__menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Магазины</a></li>
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Скидки</a></li>
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Новые поступления</a></li>
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Бренды</a></li>
+					</ul>
 				</nav>
+
 				<search class="header__search">
 					<form action=""
 								class="search-form"
@@ -98,5 +113,7 @@
 		</header>
 		<!-- можно стилизовать хедер -->
 	</body>
+	<script type="module"
+					src="./js/index_burger.js"></script>
 
 </html>

@@ -15,14 +15,28 @@
 
 .header__logo {}
 
-.header__nav {
-	width: 436px;
-	display: flex;
-	/* min14px-max40px 1150 - 1920 */
-	gap: clamp(14px, -0.94px + 1.30vw, 24px);
-	white-space: nowrap;
-	white-space: nowrap;
+.menu__list {
+	display: none;
 }
+
+.header__burger {
+	display: block;
+}
+
+@media (width>=700px) {
+	.menu__list {
+		width: 436px;
+		display: flex;
+		/* min14px-max40px 1150 - 1920 */
+		gap: clamp(14px, -0.94px + 1.30vw, 24px);
+		white-space: nowrap;
+	}
+
+	.header__burger {
+		display:none;
+	}
+}
+
 
 .nav__link {}
 
@@ -80,7 +94,7 @@
 
 .header__icon-search {
 	color: black;
-	
+
 }
 
 @media (width>=904px) {
