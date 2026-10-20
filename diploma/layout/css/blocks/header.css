@@ -67,6 +67,7 @@
 	position: absolute;
 	left: 16px;
 	top: 12px;
+	color: #0a0b0a67;
 
 }
 
@@ -75,4 +76,16 @@
 	justify-content: center;
 	align-items: center;
 	gap: 14px;
+}
+
+.header__icon-search {
+	color: black;
+	
+}
+
+@media (width>=904px) {
+
+	.header__icon-search {
+		display: none;
+	}
 }
