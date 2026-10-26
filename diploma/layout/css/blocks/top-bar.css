@@ -10,9 +10,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-
 	height: 38px;
-
 	color: #fff;
 	padding-block: 9px;
 }
@@ -54,8 +52,13 @@
 		display: none;
 	}
 
+	.top-bar__link {
+		font-size: 12px;
+	}
+
+
 	.top-bar__container {
 		justify-content: center;
-		
+
 	}
 }
