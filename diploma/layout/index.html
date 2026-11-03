@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport"
 					content="width=device-width, initial-scale=1.0">
+					<link rel="shortcut icon" href="./icon/favicon.svg" type="image/x-icon">
 		<link rel="stylesheet"
 					href="./css/base/normalize.css">
 		<link rel="stylesheet"
@@ -15,7 +16,6 @@
 
 		<title>shop.co</title>
 	</head>
-
 	<body class="page__body">
 		<div class="top-bar"
 				 id="topBar">
@@ -99,7 +99,6 @@
 						</li>
 					</ul>
 				</nav>
-
 				<search class="header__search">
 					<form action=""
 								class="search-form"
@@ -144,9 +143,91 @@
 				</div>
 			</div>
 		</header>
-		<!-- можно стилизовать хедер -->
+		<main>
+			<section class="hero">
+				<div class="container hero__container">
+					<div class="hero__content">
+						<h1 class="hero__title">
+							НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+						</h1>
+						<span class="hero__description">Просмотрите наш набор тщательно сделанной одежды, созданный чтобы
+							подчеркнуть
+							ваш
+							индивидуальный стиль.</span>
+						<button class="hero__btn"
+										title="Купить сейчас"
+										aria-label="Купить сейчас">
+							купить сейчас
+						</button>
+					</div>
+					<div class="hero__stats">
+						<ul class="stats">
+							<li class="stats__item">
+								<div class="stats__content">
+									<span class="stats__number">200+</span>
+									<p class="stats__text">Всемирных брендов</p>
+								</div>
+							</li>
+							<li class="stats__item">
+								<div class="stats__content">
+									<span class="stats__number">2,000+</span>
+									<p class="stats__text">Качественных товаров</p>
+								</div>
+							</li>
+							<li class="stats__item">
+								<div class="stats__content">
+									<span class="stats__number">30,000+</span>
+									<p class="stats__text">Счастливых клиентов</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="hero__brand-bar">
+						<ul class="brand-bar__list">
+							<li class="brand-bar__logo">
+								<svg width="167"
+										 height="34">
+									<use href="./icon/sprite.svg#versace" />
+								</svg>
+							</li>
+							<li class="brand-bar__logo">
+								<svg width="91"
+										 height="38">
+									<use href="./icon/sprite.svg#zara" />
+								</svg>
+							</li>
+							<li class="brand-bar__logo">
+								<svg width="156"
+										 height="36">
+									<use href="./icon/sprite.svg#gucci" />
+								</svg>
+							</li>
+							<li class="brand-bar__logo">
+								<svg width="194"
+										 height="32">
+									<use href="./icon/sprite.svg#prada" />
+								</svg>
+							</li>
+							<li class="brand-bar__logo">
+								<svg width="207"
+										 height="34">
+									<use href="./icon/sprite.svg#calvin" />
+								</svg>
+							</li>
+						</ul>
+					</div>
+					<div class="hero__pattern">
+						<svg class="hero__pattern-left">
+							<use href="./icon/sprite.svg#pattern-left" />
+						</svg>
+						<svg class="hero__pattern-right">
+							<use href="./icon/sprite.svg#pattern-right" />
+						</svg>
+					</div>
+				</div>
+			</section>
+		</main>
 	</body>
 	<script type="module"
 					src="./js/index.js"></script>
-
 </html>
