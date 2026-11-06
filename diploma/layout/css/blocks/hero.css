@@ -1,43 +1,45 @@
 .hero {
 	height: 785px;
+	background-color: #F2F0F1;
 	background-image: url(../../images/hero/bg-hero-images.png);
-background-size: auto;
-background-repeat: no-repeat;
-background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% top;
+	
 }
-.container {
-}
-.hero__container {
-}
-.hero__content {
-}
-.hero__title {
-}
-.hero__description {
-}
-.hero__btn {
-}
-.hero__stats {
-}
-.stats {
-}
-.stats__item {
-}
-.stats__content {
-}
-.stats__number {
-}
-.stats__text {
-}
-.hero__brand-bar {
-}
-.brand-bar__list {
-}
-.brand-bar__logo {
-}
-.hero__pattern {
-}
-.hero__pattern-left {
-}
-.hero__pattern-right {
-}
+
+.container {}
+
+.hero__container {}
+
+.hero__content {}
+
+.hero__title {}
+
+.hero__description {}
+
+.hero__btn {}
+
+.hero__stats {}
+
+.stats {}
+
+.stats__item {}
+
+.stats__content {}
+
+.stats__number {}
+
+.stats__text {}
+
+.hero__brand-bar {}
+
+.brand-bar__list {}
+
+.brand-bar__logo {}
+
+.hero__pattern {}
+
+.hero__pattern-left {}
+
+.hero__pattern-right {}
