@@ -1,4 +1,9 @@
 .hero {
+	height: 785px;
+	background-image: url(../../images/hero/bg-hero-images.png);
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
 }
 .container {
 }
