@@ -162,8 +162,38 @@
 	height: 122px;
 }
 
-.brand-bar__logo>svg {
-	height:;
+
+@media (width<675px) {
+	.brand-bar__list {
+		column-gap: clamp(34px, -70.73px + 26.18vw, 106px);
+		/* 34px, viewport: 400px -> 106px, viewport: 675px */
+		row-gap: 21px;
+	}
+
+	.brand-bar__icon-versace {
+		
+	}
+
+	.brand-bar__icon-zara {
+	
+	}
+
+	.brand-bar__icon-gucci {
+		
+	}
+
+	.brand-bar__icon-prada {
+		
+	}
+
+	.brand-bar__icon-calvin {
+		width:
+			height:
+	}
+
+
 }
+
+
 /* требуется изменять размеры каждого бренда т.к они все разные
 размеры можно менять в Спрайте, я удали в спрайте ширину и длину, а также вайв бокс у версачи */
