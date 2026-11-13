@@ -162,6 +162,15 @@
 	height: 122px;
 }
 
+.brand-bar__icon--desktop {
+	display: block;
+}
+
+.brand-bar__icon--mobi {
+	display: none;
+}
+
+
 
 @media (width<675px) {
 	.brand-bar__list {
@@ -170,26 +179,23 @@
 		row-gap: 21px;
 	}
 
-	.brand-bar__icon-versace {
-		
+	.brand-bar__icon--desktop {
+		display: none;
 	}
 
-	.brand-bar__icon-zara {
-	
+	.brand-bar__icon--mobi {
+		display: block;
 	}
 
-	.brand-bar__icon-gucci {
-		
-	}
 
-	.brand-bar__icon-prada {
-		
-	}
 
-	.brand-bar__icon-calvin {
-		width:
-			height:
-	}
+	.brand-bar__icon-zara {}
+
+	.brand-bar__icon-gucci {}
+
+	.brand-bar__icon-prada {}
+
+	.brand-bar__icon-calvin {}
 
 
 }
