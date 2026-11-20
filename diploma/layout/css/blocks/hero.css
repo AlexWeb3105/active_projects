@@ -174,7 +174,9 @@
 
 @media (width<675px) {
 	.brand-bar__list {
-		column-gap: 0;
+		height: 146px;
+		padding-block: 20px;
+		column-gap: 35px;
 	}
 
 
