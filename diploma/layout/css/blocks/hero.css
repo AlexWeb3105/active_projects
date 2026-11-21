@@ -8,7 +8,7 @@
 .hero__wrapper-bg {
 
 	position: absolute;
-	z-index: -1;
+	z-index: 0;
 	right: clamp(-40px, -746.87px + 50.42vw, 201px);
 	/* -40px, viewport: 1402px -> 201px, viewport: 1880px */
 }
@@ -218,3 +218,5 @@
 	}
 
 }
+
+/* нужно сделать bg в контейнере, а конейнеру сделать флекс, разместив картинку рядом с контентом */
