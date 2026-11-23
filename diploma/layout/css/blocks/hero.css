@@ -10,16 +10,18 @@
 }
 
 .hero__wrapper-bg {
-
 	position: absolute;
-	z-index: 0;
+	z-index: -1;
 	right: clamp(-40px, -746.87px + 50.42vw, 201px);
 	/* -40px, viewport: 1402px -> 201px, viewport: 1880px */
+
+	transform:translateX(-74px)
 }
 
 
 .hero__bg {
-	width: 732px;
+	width: 660px;
+
 }
 
 .hero__pattern {
@@ -153,17 +155,17 @@
 
 
 @media (width<=1402px) {
-	.hero__wrapper-bg {
+	/*.hero__wrapper-bg {
 		display: none;
-	}
+	}*/
 
 	.hero__brand-bar {
 		margin-top: 0px;
 	}
 
-	.hero__wrapper-bg--mobi {
+	/*.hero__wrapper-bg--mobi {
 		display: block;
-	}
+	}*/
 }
 
 @media (width<675px) {
