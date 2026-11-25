@@ -39,11 +39,13 @@
 }
 
 .hero__pattern-right--mobi {
-	top: 10px;
+	top: 40px;
+	right: 21px;
 }
 
 .hero__pattern-left--mobi {
-	top: 20px;
+	top: 137px;
+	left: 27px;
 }
 
 .hero__title {
@@ -187,6 +189,7 @@
 
 	.hero__wrapper-bg--mobi {
 		display: block;
+
 	}
 }
 
